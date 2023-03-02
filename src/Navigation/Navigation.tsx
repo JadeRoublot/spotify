@@ -7,6 +7,7 @@ import './Navigation.css';
 
 const menuItems = [
     { key: '/MainPage', label: 'MainPage' },
+    { key: '/LikedSong', label: 'LikedSong' },
     
 ];
 
