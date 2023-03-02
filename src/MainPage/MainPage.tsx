@@ -6,8 +6,8 @@ import { State } from '../store';
 
 
 const MainPage = () => {
-    const dispatch = useDispatch();
-    const playlist = useSelector((state: State) => state.playlists);
+   // const dispatch = useDispatch();
+    //const playlist = useSelector((state: State) => state.playlists);
     
 
     return (
