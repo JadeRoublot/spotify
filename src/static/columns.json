@@ -4,6 +4,31 @@
         "dataIndex": "title",
         "key": "title"
         
+    },
+    {
+        "title": "Year",
+        "dataIndex": "year",
+        "key": "year"
+        
+    },
+    {
+        "title": "Genre",
+        "dataIndex": "genre",
+        "key": "genre"
+        
+    },
+    {
+        "title": "Popularity",
+        "dataIndex": "popularity",
+        "key": "popularity"
+        
+    },
+
+    {
+        "title": "Duration",
+        "dataIndex": "duration",
+        "key": "duration"
+        
     }
    
 ]

@@ -6,7 +6,7 @@ import { MenuInfo } from 'rc-menu/lib/interface';
 import './Navigation.css';
 
 const menuItems = [
-    { key: '/MainPage', label: 'MainPage' },
+    { key: '/MainPage', label: 'Home' },
     { key: '/LikedSong', label: 'LikedSong' },
     
 ];
