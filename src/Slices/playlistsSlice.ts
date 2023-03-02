@@ -1,17 +1,22 @@
 import { createSlice } from '@reduxjs/toolkit';
 import React, { useState } from 'react';
+import Data from '../static/data.json';
 
 export interface Playlist {
-    value: string;
-    label: string;
+    title: string;
+    artist: string;
+    genre: string;
+    year : number;
+    duration : number;
+    popularity : number;
 }
 
 
 
 export const Add = createSlice({
-    name: 'todolist',
+    name: 'playlist',
     initialState: {
-       
+      
        
         
     },
