@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Layout, Menu,  Button, theme } from 'antd';
-import { Content, Footer, Header } from 'antd/es/layout/layout';
+import { Layout, Menu, theme } from 'antd';
+import { Content, Header } from 'antd/es/layout/layout';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { MenuInfo } from 'rc-menu/lib/interface';
-import type { MenuProps } from 'antd';
 import './Navigation.css';
 import Sider from 'antd/es/layout/Sider';
 
