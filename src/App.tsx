@@ -1,8 +1,17 @@
 import React from 'react';
-import './index.css';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import Navigation from './Navigation';
+import MainPage from './MainPage';
 
-const App = () => {
-    return <div>Spotify</div>;
-};
+
+const App = () => (
+    <div className="app">
+        <Navigation />
+        <Routes>
+            <Route path="/MainPage" element={<MainPage />} />
+            <Route path="*" element={<Navigate to="/MainPage" />} />
+        </Routes>
+    </div>
+);
 
 export default App;
