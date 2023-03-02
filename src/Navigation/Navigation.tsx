@@ -5,10 +5,11 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { MenuInfo } from 'rc-menu/lib/interface';
 import './Navigation.css';
 import Sider from 'antd/es/layout/Sider';
+import { HeartFilled, HomeFilled } from '@ant-design/icons';
 
 const menuItems = [
-    { key: '/MainPage', label: 'Home' },
-    { key: '/LikedSong', label: 'LikedSong' },
+    { key: '/MainPage', label: 'Home' , icon : <HomeFilled />},
+    { key: '/LikedSong', label: 'LikedSong',icon : <HeartFilled /> },
     
 ];
 
