@@ -11,10 +11,11 @@ const MainPage = () => {
     
 
     return (
-        <div className="todo-list-redux">
-           
-          <h1>Hi</h1>
-        </div>
+       
+            <div style={{ paddingLeft: 250, textAlign: 'left'}}>
+                <h1>Hi</h1>
+            </div>
+     
     );
 };
 

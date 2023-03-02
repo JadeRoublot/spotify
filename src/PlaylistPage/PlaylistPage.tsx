@@ -8,7 +8,10 @@ const PlaylistPage = () => {
     const columns = Columns;
 
     return (
-        <Table dataSource={data} columns={columns} />
+        <div style={{ paddingLeft: 250, textAlign: 'center'}}>
+           <Table dataSource={data} columns={columns} />
+        </div>
+      
     );
 };
 
