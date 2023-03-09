@@ -8,9 +8,14 @@ const PlaylistPage = () => {
     const columns = Columns;
 
     return (
-        <div style={{ paddingLeft: 250, textAlign: 'center'}}>
-           <Table dataSource={data} columns={columns} />
-        </div>
+      
+           <div className="app">
+                <div className="upper">
+                    <div className="body">
+                        <Table dataSource={data} columns={columns} />
+                    </div>
+                 </div>
+            </div>
       
     );
 };
