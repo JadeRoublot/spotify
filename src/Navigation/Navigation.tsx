@@ -44,7 +44,7 @@ const Navigation = () => {
           backgroundColor : 'rgba(0, 0, 0)'
         }}
       >
-        <div style={{ height: 32, margin: 20, backgroundImage : `url(/img/spotify logo.png)`}} />
+        <div style={{ height: 32, margin: 20}} />
         <img></img>
         <Menu  
         mode="inline" 
@@ -55,7 +55,7 @@ const Navigation = () => {
       </Sider>
       <Layout className="site-layout" style={{ marginLeft: 200 , backgroundColor: 'rgba(18, 18, 18)'}}>
         <Header style={{ padding: 0, backgroundColor: 'rgba(18, 18, 18)'  }} />
-        <Content style={{ margin: '24px 16px 0', overflow: 'initial',  backgroundColor: 'rgba(18, 18, 18)'}}>
+        <Content style={{ margin: '24px 16px 0', overflow: 'initial'}}>
        
           </Content>
       </Layout>

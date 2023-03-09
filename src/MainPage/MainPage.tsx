@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { State } from '../store';
-
+import './MainPageCss.css';
 
 
 const MainPage = () => {
@@ -12,7 +12,7 @@ const MainPage = () => {
 
     return (
        
-            <div style={{ paddingLeft: 250, textAlign: 'left'}}>
+            <div className="app" style={{ paddingLeft: 250, textAlign: 'left'}}>
                 <h1>Hi</h1>
             </div>
      
