@@ -16,8 +16,10 @@
     
 }
 
-.ant-menu-item {
-    padding: 20px;
+.ant-menu-item , .ant-menu-inline.ant-menu-root,.ant-menu-vertical.ant-menu-root{
+    padding: 10px;
+    color: white;
+    background-color : rgba(0, 0, 0);
 }
 
 img {

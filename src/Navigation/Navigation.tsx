@@ -40,17 +40,11 @@ const Navigation = () => {
         
         <Menu  
         mode="inline" 
-        style={{ backgroundColor : 'rgba(0, 0, 0)' , color : 'rgba(255, 255, 255)'}}
         defaultSelectedKeys={selectedKey} 
         items={menuItems} 
         onClick={handleOnClick}/>
       </Sider>
-      <Layout className="site-layout" style={{ marginLeft: 200 , backgroundColor: 'rgba(18, 18, 18)'}}>
-        <Header style={{ padding: 0, backgroundColor: 'rgba(18, 18, 18)'  }} />
-        <Content style={{ margin: '24px 16px 0', overflow: 'initial'}}>
-       
-          </Content>
-      </Layout>
+    
     </Layout>
     );
 };
