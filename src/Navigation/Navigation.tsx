@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Layout, Menu } from 'antd';
+import { Layout, Menu, Image } from 'antd';
 import { Content, Header } from 'antd/es/layout/layout';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { MenuInfo } from 'rc-menu/lib/interface';
@@ -35,7 +35,7 @@ const Navigation = () => {
           
       <Sider
       >
-        <img src="/img/spotify logo.png" alt="spotify logo"/>
+       <Image src="img/spotify logo.png" preview = {false}/>
        
         
         <Menu  

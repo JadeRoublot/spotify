@@ -7,7 +7,7 @@
 .ant-layout-sider-children{
     overflow: auto;
     height: 100vh;
-    width: 20%;
+    width: 25%;
     position: fixed;
     left: 0;
     top: 0;
@@ -17,14 +17,18 @@
 }
 
 .ant-menu-item , .ant-menu-inline.ant-menu-root,.ant-menu-vertical.ant-menu-root{
-    padding: 10px;
+    padding: 15px;
+    margin: 10px;
+    font-size: large;
+    font-weight: bold;
     color: white;
     background-color : rgba(0, 0, 0);
 }
 
-img {
-    width: 200px;
-    height: auto;
+.ant-image-img {
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
    
    
 }
