@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Layout, Menu, Image } from 'antd';
-import { Content, Header } from 'antd/es/layout/layout';
+import { Content, Footer, Header } from 'antd/es/layout/layout';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { MenuInfo } from 'rc-menu/lib/interface';
 import './Navigation.css';
@@ -46,6 +46,7 @@ const Navigation = () => {
       </Sider>
     
     </Layout>
+    
     );
 };
 

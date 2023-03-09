@@ -1,4 +1,5 @@
 import React from 'react';
+import {  Footer } from 'antd/es/layout/layout';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { State } from '../store';
@@ -15,11 +16,13 @@ const MainPage = () => {
             <div className="app">
                 <div className="upper">
                  <div className="body">
-                    <h1>Hi</h1>
+                    <h1>Your playlists</h1>
+                    <h1>Top 50</h1>
                  </div>
-                 </div>
+                </div> 
+            <Footer></Footer>
             </div>
-     
+      
     );
 };
 
