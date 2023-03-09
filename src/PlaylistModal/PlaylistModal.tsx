@@ -32,7 +32,7 @@ const PlaylistModal = () => {
         footer={[
          
           <Button key="submit" type="primary" onClick={handleOk}>
-            Create
+           Create
           </Button>
         ]}
       >
