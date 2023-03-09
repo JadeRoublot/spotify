@@ -12,7 +12,7 @@ const MainPage = () => {
 
     return (
        
-            <div className="app" style={{ paddingLeft: 250, textAlign: 'left'}}>
+            <div className="app">
                 <h1>Hi</h1>
             </div>
      
