@@ -20,7 +20,7 @@ const MainPage = () => {
                     <h1>Top 50</h1>
                  </div>
                 </div> 
-            <Footer></Footer>
+           
             </div>
       
     );

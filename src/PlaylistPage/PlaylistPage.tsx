@@ -4,6 +4,7 @@ import {  Footer } from 'antd/es/layout/layout';
 import Data from '../static/data.json';
 import Columns from '../static/columns.json';
 import './PlaylistPageCss.css';
+
 const PlaylistPage = () => {
     const data = Data;
     const columns = Columns;
@@ -16,7 +17,6 @@ const PlaylistPage = () => {
                         <Table dataSource={data} columns={columns} />
                     </div>
                  </div>
-                 <Footer></Footer>
             </div>
       
     );

@@ -44,7 +44,7 @@ const Navigation = () => {
         items={menuItems} 
         onClick={handleOnClick}/>
       </Sider>
-    
+        <Footer></Footer>
     </Layout>
     
     );
