@@ -6,6 +6,7 @@ import './PlaylistModalCss.css';
 const PlaylistModal = () => {
     //const dispatch = useDispatch();
     const [isModalOpen, setIsModalOpen] = useState(true);
+    const [newPlaylistName, setNewPlaylistName] = useState<string>();
 
     const handleOk = () => {
         setIsModalOpen(false);
@@ -14,26 +15,28 @@ const PlaylistModal = () => {
       const handleCancel = () => {
         setIsModalOpen(false);
       };
+
+      
+    const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setNewPlaylistName(e.target.value);
+    };
+
     return (
         <>
        
        <Modal
         open={isModalOpen}
-        title="Title"
+        title="Create playlist"
         onOk={handleOk}
         onCancel={handleCancel}
         footer={[
          
           <Button key="submit" type="primary" onClick={handleOk}>
-            Submit
+            Create
           </Button>
         ]}
       >
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+        <Input value={newPlaylistName} onChange={handleOnChange} />
       </Modal>
       </>
     );
