@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Layout, Menu, theme } from 'antd';
+import { Layout, Menu } from 'antd';
 import { Content, Header } from 'antd/es/layout/layout';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { MenuInfo } from 'rc-menu/lib/interface';
@@ -18,10 +18,7 @@ const Navigation = () => {
     const location = useLocation();
     const navigate = useNavigate();
     const [selectedKey, setSelectedKey] = useState<string[]>();
-    const {
-        token: { colorBgContainer },
-      } = theme.useToken();
-
+    
     useEffect(() => {
         setSelectedKey([location.pathname]);
     }, [location]);
@@ -35,6 +32,7 @@ const Navigation = () => {
     return (
 
         <Layout hasSider>
+          
       <Sider
         style={{
           overflow: 'auto',
@@ -43,19 +41,21 @@ const Navigation = () => {
           left: 0,
           top: 0,
           bottom: 0,
+          backgroundColor : 'rgba(0, 0, 0)'
         }}
       >
-        <div style={{ height: 32, margin: 16, background: 'rgba(0, 0, 0)' }} />
-        <Menu 
-        theme="dark" 
+        <div style={{ height: 32, margin: 20, backgroundImage : `url(/img/spotify logo.png)`}} />
+        <img></img>
+        <Menu  
         mode="inline" 
+        style={{ backgroundColor : 'rgba(0, 0, 0)' , color : 'rgba(255, 255, 255)'}}
         defaultSelectedKeys={selectedKey} 
         items={menuItems} 
         onClick={handleOnClick}/>
       </Sider>
-      <Layout className="site-layout" style={{ marginLeft: 200 }}>
-        <Header style={{ padding: 0, background: colorBgContainer }} />
-        <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
+      <Layout className="site-layout" style={{ marginLeft: 200 , backgroundColor: 'rgba(18, 18, 18)'}}>
+        <Header style={{ padding: 0, backgroundColor: 'rgba(18, 18, 18)'  }} />
+        <Content style={{ margin: '24px 16px 0', overflow: 'initial',  backgroundColor: 'rgba(18, 18, 18)'}}>
        
           </Content>
       </Layout>
