@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { State } from '../store';
 import './MainPageCss.css';
+import PlaylistModal from '../PlaylistModal';
 
 
 const MainPage = () => {
@@ -14,15 +15,14 @@ const MainPage = () => {
     return (
        
             <div className="app">
-                <div className="upper">
-                 <div className="body">
+            <div className="upper">
+                <div className="body">
                     <h1>Your playlists</h1>
                     <h1>Top 50</h1>
-                 </div>
-                </div> 
-           
+                </div>
             </div>
-      
+            <PlaylistModal />
+        </div>
     );
 };
 

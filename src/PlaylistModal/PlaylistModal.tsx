@@ -1,9 +1,11 @@
-import { Input, Modal } from 'antd';
+import { Button, Input, Modal } from 'antd';
+import { useDispatch, useSelector } from 'react-redux';
 import React, { useEffect, useState } from 'react';
 import './PlaylistModalCss.css';
 
 const PlaylistModal = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    //const dispatch = useDispatch();
+    const [isModalOpen, setIsModalOpen] = useState(true);
 
     const handleOk = () => {
         setIsModalOpen(false);
@@ -15,11 +17,24 @@ const PlaylistModal = () => {
     return (
         <>
        
-        <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-        </Modal>
+       <Modal
+        open={isModalOpen}
+        title="Title"
+        onOk={handleOk}
+        onCancel={handleCancel}
+        footer={[
+         
+          <Button key="submit" type="primary" onClick={handleOk}>
+            Submit
+          </Button>
+        ]}
+      >
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+      </Modal>
       </>
     );
 };
