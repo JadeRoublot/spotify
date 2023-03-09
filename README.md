@@ -56,7 +56,7 @@
 -   [ ] Menu must contain
     -   [x] Link to home page
     -   [x] Button to create a playlist
-        -   [ ] Click on it will open a modal with a text input and add button
+        -   [x] Click on it will open a modal with a text input and add button
         -   [ ] When creating a playlist you need to generate a linear gradient background color. These color must be random
     -   [x] Link to liked songs
     -   [ ] List and link to all playlist
