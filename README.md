@@ -52,7 +52,7 @@
 
 ## Left drawer
 
--   [ ] Display spotify icon on top
+-   [v] Display spotify icon on top
 -   [ ] Menu must contain
     -   [ ] Link to home page
     -   [ ] Button to create a playlist
