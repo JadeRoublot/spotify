@@ -34,18 +34,10 @@ const Navigation = () => {
         <Layout hasSider>
           
       <Sider
-        style={{
-          overflow: 'auto',
-          height: '100vh',
-          position: 'fixed',
-          left: 0,
-          top: 0,
-          bottom: 0,
-          backgroundColor : 'rgba(0, 0, 0)'
-        }}
       >
-        <div style={{ height: 32, margin: 20}} />
-        <img></img>
+        <img src="/img/spotify logo.png" alt="spotify logo"/>
+       
+        
         <Menu  
         mode="inline" 
         style={{ backgroundColor : 'rgba(0, 0, 0)' , color : 'rgba(255, 255, 255)'}}

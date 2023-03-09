@@ -4,4 +4,25 @@
 }
 
 
+.ant-layout-sider-children{
+    overflow: auto;
+    height: 100vh;
+    width: 20%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color : rgba(0, 0, 0);
+    
+}
 
+.ant-menu-item {
+    padding: 20px;
+}
+
+img {
+    width: 200px;
+    height: auto;
+   
+   
+}
