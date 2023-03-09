@@ -1,4 +1,4 @@
-body {
+.body {
   
 background: linear-gradient(180deg, #222222 0%, #1F1F1F 11.64%, #171717 25.66%, #161616 32.94%, #151515 35.98%, #131313 44.89%, #121212 55.22%, #121212 75.34%, #121212 85.45%, rgba(18, 18, 18, 18) 100%);
 flex-grow: 1;
@@ -7,4 +7,17 @@ flex-grow: 1;
 .app {
     padding-left: 150px;
     text-align: left;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
 }
+
+.upper {
+   
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+  }
+  

@@ -13,7 +13,11 @@ const MainPage = () => {
     return (
        
             <div className="app">
-                <h1>Hi</h1>
+                <div className="upper">
+                 <div className="body">
+                    <h1>Hi</h1>
+                 </div>
+                 </div>
             </div>
      
     );
