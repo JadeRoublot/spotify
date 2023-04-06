@@ -3,8 +3,17 @@ import React, { useState } from 'react';
 
 
 export interface Playlist {
-    title: string;
+    title: string
    // music : Music[];
+}
+
+export interface Music {
+    title: string
+    artist: string
+    genre: string
+    year: number
+    duration: number
+    popularity: number
 }
 
 

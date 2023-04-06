@@ -10,17 +10,21 @@ import PlaylistModal from '../PlaylistModal';
 const MainPage = () => {
    // const dispatch = useDispatch();
     //const playlist = useSelector((state: State) => state.playlists);
+    //const playlistTop = useSelector((state: State) => state.playlistsTop);
+    
     
 
     return (
        
             <div className="app">
-            <div className="upper">
-                <div className="body">
-                    <h1>Your playlists</h1>
-                    <h1>Top 50</h1>
+                <div className="upper">
+                    <div className="body">
+                        <h1 className = {'titleHomePage'}>Your playlists</h1>
+                        <div> <p>Placeholer Playlise</p></div>
+                        <h1 className = {'titleHomePage'}>Top 50</h1>
+                        <div> <p>Placeholer Playlise</p></div>
+                    </div>
                 </div>
-            </div>
             <PlaylistModal />
         </div>
     );
