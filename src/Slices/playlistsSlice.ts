@@ -4,7 +4,9 @@ import React, { useState } from 'react';
 
 export interface Playlist {
     title: string
-   // music : Music[];
+   // music : Music[]
+   // color1 : string
+   // color 2 : string
 }
 
 export interface Music {
@@ -18,7 +20,7 @@ export interface Music {
 
 
 
-export const Add = createSlice({
+export const playlistsSlice = createSlice({
     name: 'playlist',
     initialState: {
       
@@ -34,6 +36,6 @@ export const Add = createSlice({
     },
 );
 
-export const {} = Add.actions;
+export const {} =  playlistsSlice.actions;
 
-export default Add.reducer;
+export default  playlistsSlice.reducer;
