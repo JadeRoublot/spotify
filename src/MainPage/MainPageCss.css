@@ -24,4 +24,8 @@ flex-grow: 1;
 
 .titleHomePage {
     color: white;
+    font-size: 38px;
+    margin-bottom: 18px;
+    height: 56px;
+    width: 280px;
 }
