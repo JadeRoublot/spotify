@@ -1,5 +1,5 @@
 .customSvg {
-    color:white;
+    color:#C4C4C4;
 }
 
 .centerFooter {
@@ -10,8 +10,18 @@
     display: flex !important;
     justify-content: center;
     align-content: center;
+    color: #C4C4C4;
 }
-
+.rightFooter {
+    text-align: right;
+}
+.iconFooter{
+    
+    height: 10px !important;
+    width: 10px !important;
+    padding: 0px;
+    margin: 0px;
+}
 .button {
     
     background: #FFFFFF;

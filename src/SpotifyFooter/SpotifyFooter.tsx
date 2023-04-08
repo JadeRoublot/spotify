@@ -1,12 +1,12 @@
 import { Button, Col, Row, Slider} from 'antd';
 import React, { useEffect, useState } from 'react';
-
+import { Image } from 'antd';
 import './SpotifyFooterCss.css';
 import { CaretRightOutlined, RetweetOutlined, StepBackwardOutlined, StepForwardOutlined } from '@ant-design/icons';
 
 const SpotifyFooter = () => {
   
-    const [inputValue, setInputValue] = useState(0);
+    const [inputValue, setInputValue] = useState(0.00);
 
     const onChange = (value: number) => {
         if (isNaN(value)) {
@@ -26,6 +26,7 @@ const SpotifyFooter = () => {
                 </Col>
                 <Col span={10} >
                 <div className ="centerFooter">
+                <Image src="img/random.png" preview = {false} className ="iconFooter"/>
                     <StepBackwardOutlined className ="customSvg"/>
 
                     <Button  shape="circle" className ="button" size = {'large'}>
@@ -38,7 +39,7 @@ const SpotifyFooter = () => {
             <div className ="centerSlider">
                 <h1>{inputValue}</h1>
                 <Slider
-                    min={0}
+                    min={0.00}
                     max={1}
                     onChange={onChange}
                     value={typeof inputValue === 'number' ? inputValue : 0}
@@ -51,9 +52,9 @@ const SpotifyFooter = () => {
                 </Col>
 
                 <Col span={7}>
-
-                    <h1>hi</h1>
-
+                    <div className ="rightFooter">
+                        <h1>hi</h1>
+                    </div>
                 </Col>
             </Row>
             
