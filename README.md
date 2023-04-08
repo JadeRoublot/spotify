@@ -65,7 +65,7 @@
 
 -   [ ] On the left display playlist cover with name of music currently selected
 -   [ ] Display a fake player in the center
--   [ ] Display fake control button on the right
+-   [x] Display fake control button on the right
 
 ## General informations
 
