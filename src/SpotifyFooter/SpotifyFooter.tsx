@@ -35,7 +35,7 @@ const SpotifyFooter = () => {
                     <StepForwardOutlined className ="customSvg"/>
                     <RetweetOutlined className ="customSvg"/>
                 </div>
-            <div className ="centerFooter">
+            <div className ="centerSlider">
                 <h1>{inputValue}</h1>
                 <Slider
                     min={0}

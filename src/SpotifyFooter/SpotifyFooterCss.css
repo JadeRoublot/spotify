@@ -4,8 +4,12 @@
 
 .centerFooter {
    text-align: center;
-    
-    
+}
+
+.centerSlider {
+    display: flex !important;
+    justify-content: center;
+    align-content: center;
 }
 
 .button {
