@@ -6,6 +6,7 @@ import { MenuInfo } from 'rc-menu/lib/interface';
 import './Navigation.css';
 import Sider from 'antd/es/layout/Sider';
 import { HeartFilled, HomeFilled, PlusSquareFilled } from '@ant-design/icons';
+import SpotifyFooter from '../SpotifyFooter';
 
 const menuItems = [
     { key: '/MainPage', label: 'Home' , icon : <HomeFilled />},
@@ -44,7 +45,7 @@ const Navigation = () => {
         items={menuItems} 
         onClick={handleOnClick}/>
       </Sider>
-        <Footer></Footer>
+        <Footer><SpotifyFooter/></Footer>
     </Layout>
     
     );
