@@ -2,7 +2,7 @@ import { Button, Col, Row, Slider} from 'antd';
 import React, { useEffect, useState } from 'react';
 import { Image } from 'antd';
 import './SpotifyFooterCss.css';
-import { CaretRightOutlined, RetweetOutlined, StepBackwardOutlined, StepForwardOutlined } from '@ant-design/icons';
+import { ArrowsAltOutlined, CaretRightOutlined, RetweetOutlined, StepBackwardOutlined, StepForwardOutlined } from '@ant-design/icons';
 
 const SpotifyFooter = () => {
   
@@ -53,7 +53,9 @@ const SpotifyFooter = () => {
 
                 <Col span={7}>
                     <div className ="rightFooter">
-                        <h1>hi</h1>
+                    <Image src="img/interfaceLeft.jpg" preview = {false} className ="imageFooter"/>
+                    <ArrowsAltOutlined className ="customSvg"/>
+                        
                     </div>
                 </Col>
             </Row>
