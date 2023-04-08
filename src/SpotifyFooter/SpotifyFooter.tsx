@@ -14,22 +14,22 @@ const SpotifyFooter = () => {
     return (
       
         <div >
-            <Row>
-                <Col span={12}>
+            <Row justify="center" align="middle"> 
+                <Col span={8}>
 
                     <h1>hi</h1>
 
                 </Col>
-                <Col span={12}>
+                <Col span={8}>
                
-                    <StepBackwardOutlined />
+                    <StepBackwardOutlined className ="customSvg"/>
 
                     <Button  shape="circle">
                         <CaretRightOutlined />
                     </Button>
 
-                    <StepForwardOutlined />
-                    <RetweetOutlined />
+                    <StepForwardOutlined className ="customSvg"/>
+                    <RetweetOutlined className ="customSvg"/>
            
                     <Slider
                         min={0}
@@ -37,6 +37,12 @@ const SpotifyFooter = () => {
                         onChange={onChange}
                         value={typeof inputValue === 'number' ? inputValue : 0}
                         />
+                </Col>
+
+                <Col span={8}>
+
+                    <h1>hi</h1>
+
                 </Col>
             </Row>
             
