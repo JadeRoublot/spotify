@@ -9,13 +9,15 @@
 }
 
 .button {
-   
     
+    background: #FFFFFF;
 }
 .slide{
   
     background-color: #535353;
     border-radius: 2.5px;
+    height: 7px;
+    width: 633px;
 }
 
 .ant-slider-handle {

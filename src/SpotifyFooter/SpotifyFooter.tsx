@@ -8,9 +8,13 @@ const SpotifyFooter = () => {
   
     const [inputValue, setInputValue] = useState(0);
 
-    const onChange = (newValue: number) => {
-      setInputValue(newValue);
-    };
+    const onChange = (value: number) => {
+        if (isNaN(value)) {
+          return;
+        }
+        setInputValue(value);
+      };
+
     return (
       
         <div >
@@ -24,20 +28,26 @@ const SpotifyFooter = () => {
                 <div className ="centerFooter">
                     <StepBackwardOutlined className ="customSvg"/>
 
-                    <Button  shape="circle" className ="button">
+                    <Button  shape="circle" className ="button" size = {'large'}>
                         <CaretRightOutlined />
                     </Button>
 
                     <StepForwardOutlined className ="customSvg"/>
                     <RetweetOutlined className ="customSvg"/>
                 </div>
-                    <Slider
-                        min={0}
-                        max={6}
-                        onChange={onChange}
-                        value={typeof inputValue === 'number' ? inputValue : 0}
-                        className ="slide"
-                        />
+            <div className ="centerFooter">
+                <h1>{inputValue}</h1>
+                <Slider
+                    min={0}
+                    max={1}
+                    onChange={onChange}
+                    value={typeof inputValue === 'number' ? inputValue : 0}
+                    step={0.01}
+                    className ="slide"
+                    />
+
+                <h1>[placeholer max]</h1>   
+            </div>   
                 </Col>
 
                 <Col span={7}>
