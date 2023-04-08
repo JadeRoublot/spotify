@@ -21,7 +21,7 @@ const SpotifyFooter = () => {
             <Row justify="space-around" align="middle"> 
                 <Col span={7}  >
 
-                    <h1>hi</h1>
+                    <h1>[placeholer playlist]</h1>
 
                 </Col>
                 <Col span={10} >
