@@ -14,32 +14,33 @@ const SpotifyFooter = () => {
     return (
       
         <div >
-            <Row justify="center" align="middle"> 
-                <Col span={8}>
+            <Row justify="space-around" align="middle"> 
+                <Col span={7}  >
 
                     <h1>hi</h1>
 
                 </Col>
-                <Col span={8}>
-               
+                <Col span={10} >
+                <div className ="centerFooter">
                     <StepBackwardOutlined className ="customSvg"/>
 
-                    <Button  shape="circle">
+                    <Button  shape="circle" className ="button">
                         <CaretRightOutlined />
                     </Button>
 
                     <StepForwardOutlined className ="customSvg"/>
                     <RetweetOutlined className ="customSvg"/>
-           
+                </div>
                     <Slider
                         min={0}
-                        max={20}
+                        max={6}
                         onChange={onChange}
                         value={typeof inputValue === 'number' ? inputValue : 0}
+                        className ="slide"
                         />
                 </Col>
 
-                <Col span={8}>
+                <Col span={7}>
 
                     <h1>hi</h1>
 
