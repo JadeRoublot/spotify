@@ -4,9 +4,9 @@ import React, { useState } from 'react';
 
 export interface Playlist {
     title: string
-   // music : Music[]
-   // color1 : string
-   // color 2 : string
+    music : Music[]
+    color1 : string
+    color2 : string
 }
 
 export interface Music {
@@ -18,7 +18,12 @@ export interface Music {
     popularity: number
 }
 
-let setColorPlaylist = () => (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+const likedSongPlaylist: Playlist = {
+    title : "Liked Songs",
+    music: [],
+    color1: "#4000F4",
+    color2: "#C0ECD7"
+}
 
 export const playlistsSlice = createSlice({
     name: 'playlist',

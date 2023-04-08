@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {  Footer } from 'antd/es/layout/layout';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
@@ -11,7 +11,7 @@ const MainPage = () => {
    // const dispatch = useDispatch();
     //const playlist = useSelector((state: State) => state.playlists);
     //const playlistTop = useSelector((state: State) => state.playlistsTop);
-    
+    const [isModalOpen, setIsModalOpen] = useState(false);
     
 
     return (
