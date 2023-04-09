@@ -17,9 +17,9 @@ const CardTop50 = () => {
        
             <div>
 
-                <Link to={`/LikedSong`} className={'Link'}>
+                <Link to={`/LikedSong`} className={'Link'} >
 
-                    <Card style={{ width: 300 }}>
+                    <Card className={'CardTop50'} bordered={false}>
                         <p>Card content</p>
                         <p>Card content</p>
                         <p>Card content</p>

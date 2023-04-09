@@ -18,7 +18,7 @@ const CardPlaylist = () => {
             <div>
                  <Link to={`/LikedSong`} className={'Link'}>
 
-                    <Card style={{ width: 300 }}>
+                    <Card className={'CardPlaylist'} bordered={false}>
                         <p>Card content</p>
                         <p>Card content</p>
                         <p>Card content</p>
