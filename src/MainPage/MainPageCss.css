@@ -3,8 +3,23 @@
     background: linear-gradient(180deg, #222222 0%, #1F1F1F 11.64%, #171717 25.66%, #161616 32.94%, #151515 35.98%, #131313 44.89%, #121212 55.22%, #121212 75.34%, #121212 85.45%, rgba(18, 18, 18, 0) 100%);
 flex-grow: 1;
 }
+
 .yourPlaylists {
     display: flex;
+}
+
+.textCard {
+    position: absolute;
+    width: 111px;
+    height: 26px;
+    left: 120px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    
+    color:white;
 }
 
 .app {

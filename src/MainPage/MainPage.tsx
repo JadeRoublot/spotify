@@ -32,7 +32,7 @@ const MainPage = () => {
                                     <Card className={'CardPlaylistCover'}>
                                         <HeartFilled />
                                     </Card>
-                                    <p>Card content</p>
+                                    <p className = {'textCard'}>Card content</p>
                                 </Card>
 
                             </Link>

@@ -23,7 +23,7 @@ const CardPlaylist = () => {
                            
                            
                         </Card>
-                        <p>Card content</p>
+                        <p className = {'textCard'}>Card content</p>
                        
                     </Card>
 
