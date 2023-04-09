@@ -7,6 +7,9 @@ import './MainPageCss.css';
 import PlaylistModal from '../PlaylistModal';
 import CardPlaylist from './CardPlaylist';
 import CardTop50 from './CardTop50';
+import { Card } from 'antd';
+import { Link } from 'react-router-dom';
+import { HeartFilled } from '@ant-design/icons';
 
 
 const MainPage = () => {
@@ -22,7 +25,22 @@ const MainPage = () => {
                 <div className="upper">
                     <div className="body">
                         <h1 className = {'titleHomePage'}>Your playlists</h1>
-                        <div><CardPlaylist /></div>
+                        <div className={'yourPlaylists'}>
+                            <Link to={`/LikedSong`} className={'Link'}>
+                                
+                                <Card className={'CardPlaylist'} bordered={false}>
+                                    <Card className={'CardPlaylistCover'}>
+                                        <HeartFilled />
+                                    </Card>
+                                    <p>Card content</p>
+                                    <p>Card content</p>
+                                    <p>Card content</p>
+                                </Card>
+
+                            </Link>
+                        
+                            <CardPlaylist />
+                        </div>
                         <h1 className = {'titleHomePage'}>Top 50</h1>
                         <div> <CardTop50 /></div>
                     </div>

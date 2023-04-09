@@ -20,7 +20,7 @@ const CardPlaylist = () => {
                     
                     <Card className={'CardPlaylist'} bordered={false}>
                         <Card className={'CardPlaylistCover'}>
-                            <p>Card content</p>
+                           
                            
                         </Card>
                         <p>Card content</p>
