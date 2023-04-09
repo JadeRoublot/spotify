@@ -5,6 +5,8 @@ import { useSelector } from 'react-redux';
 import { State } from '../store';
 import './MainPageCss.css';
 import PlaylistModal from '../PlaylistModal';
+import CardPlaylist from './CardPlaylist';
+import CardTop50 from './CardTop50';
 
 
 const MainPage = () => {
@@ -20,9 +22,9 @@ const MainPage = () => {
                 <div className="upper">
                     <div className="body">
                         <h1 className = {'titleHomePage'}>Your playlists</h1>
-                        <div> <p>Placeholer Playlise</p></div>
+                        <div><CardPlaylist /></div>
                         <h1 className = {'titleHomePage'}>Top 50</h1>
-                        <div> <p>Placeholer Playlise</p></div>
+                        <div> <CardTop50 /></div>
                     </div>
                 </div>
             <PlaylistModal />
