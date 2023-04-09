@@ -9,7 +9,7 @@ const HeaderPlaylist = () => {
 
     return (
       
-           <div >
+           <div className = {'heade'}>
               <h1>hi</h1>
             </div>
       
