@@ -4,8 +4,9 @@
 flex-grow: 1;
 }
 .yourPlaylists {
-    
+    display: flex;
 }
+
 .app {
     padding-left: 150px;
     text-align: left;
