@@ -16,7 +16,15 @@ const CardPlaylist = () => {
     return (
        
             <div>
-                <h1>hi</h1>
+                 <Link to={`/LikedSong`} className={'Link'}>
+
+                    <Card style={{ width: 300 }}>
+                        <p>Card content</p>
+                        <p>Card content</p>
+                        <p>Card content</p>
+                    </Card>
+
+                </Link>
             </div>
     );
 };

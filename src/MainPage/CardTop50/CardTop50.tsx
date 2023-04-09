@@ -16,7 +16,17 @@ const CardTop50 = () => {
     return (
        
             <div>
-                <h1>hi top50</h1>
+
+                <Link to={`/LikedSong`} className={'Link'}>
+
+                    <Card style={{ width: 300 }}>
+                        <p>Card content</p>
+                        <p>Card content</p>
+                        <p>Card content</p>
+                    </Card>
+
+                </Link>
+
             </div>
     );
 };
