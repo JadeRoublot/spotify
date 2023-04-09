@@ -17,8 +17,12 @@ const CardPlaylist = () => {
        
             <div>
                  <Link to={`/LikedSong`} className={'Link'}>
-
+                    
                     <Card className={'CardPlaylist'} bordered={false}>
+                        <Card className={'CardPlaylistCover'}>
+                            <p>Card content</p>
+                           
+                        </Card>
                         <p>Card content</p>
                         <p>Card content</p>
                         <p>Card content</p>

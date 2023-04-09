@@ -4,3 +4,12 @@
     background-color: #303030;
     border-radius: 4px;
 }
+
+.CardPlaylistCover {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 4px 0px 0px 4px;
+    left: 0px;
+    top: 0px;
+}
