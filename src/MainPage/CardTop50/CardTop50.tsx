@@ -17,7 +17,7 @@ const CardTop50 = () => {
        
             <div>
 
-                <Link to={`/LikedSong`} className={'Link'} >
+                <Link to={`/LikedSong`} className={'Link50'} >
 
                     <Card className={'CardTop50'} bordered={false}>
                         <Card className={'CardTop50Cover'} bordered={false}>
