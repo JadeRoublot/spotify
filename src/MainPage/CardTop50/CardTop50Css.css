@@ -13,5 +13,13 @@
 .CardTop50Cover {
     width: 191px;
     height: 191px;
+    border-radius: 14px;
+    
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: -0.04em;
+
     
 }

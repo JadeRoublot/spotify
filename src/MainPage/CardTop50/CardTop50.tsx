@@ -21,11 +21,10 @@ const CardTop50 = () => {
 
                     <Card className={'CardTop50'} bordered={false}>
                         <Card className={'CardTop50Cover'} bordered={false}>
-                            <p>Card content</p>
+                            <p>TOP 50</p>
                             <p>Card content</p>
                         </Card>
 
-                        <p>Card content</p>
                         <p>Card content</p>
                         <p>Card content</p>
                     </Card>
