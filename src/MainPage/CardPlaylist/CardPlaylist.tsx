@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import { State } from '../../store';
 import { Card } from 'antd';
 import { Link } from 'react-router-dom';
-
+import './CardPlaylistCss.css';
 
 const CardPlaylist = () => {
    // const dispatch = useDispatch();
