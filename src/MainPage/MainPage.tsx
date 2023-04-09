@@ -33,8 +33,6 @@ const MainPage = () => {
                                         <HeartFilled />
                                     </Card>
                                     <p>Card content</p>
-                                    <p>Card content</p>
-                                    <p>Card content</p>
                                 </Card>
 
                             </Link>
