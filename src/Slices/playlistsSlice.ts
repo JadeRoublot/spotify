@@ -65,12 +65,17 @@ export const playlistsSlice = createSlice({
         setPlaylist: (state: {playlist: Playlist[]}, action: { payload: Playlist[] }) => {
             state.playlist = action.payload;
         },
-       
+
+        setDisplayModal: (state: { displayModal: true | false }, action: { payload: true | false }) => {
+            state.displayModal = action.payload
+        },
+
+
        }
 
     },
 );
 
-export const {setPlaylist} =  playlistsSlice.actions;
+export const {setPlaylist, setDisplayModal} =  playlistsSlice.actions;
 
 export default  playlistsSlice.reducer;
