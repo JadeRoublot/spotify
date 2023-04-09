@@ -4,6 +4,7 @@ import { Header } from 'antd/es/layout/layout';
 import Data from '../static/data.json';
 import Columns from '../static/columns.json';
 import './PlaylistPageCss.css';
+import HeaderPlaylist from './Header';
 
 const PlaylistPage = () => {
     const data = Data;
@@ -12,7 +13,7 @@ const PlaylistPage = () => {
     return (
       
            <div className="app">
-               <Header></Header>
+              <HeaderPlaylist/>
                 <div className="upper">
                     <div className="body">
                         <Table dataSource={data} columns={columns} />
