@@ -20,7 +20,7 @@ const MainPage = () => {
     const playlistTop: PlaylistTop[] = useSelector((state: State) => state.spotify.playlistTop);
 
     
-    console.log(playlist);
+    //console.log(playlist);
     return (
        
             <div className="app">
