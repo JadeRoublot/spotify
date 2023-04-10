@@ -5,6 +5,7 @@ export interface State {
     spotify: {
         playlists: Playlist[],
         playlistTop : PlaylistTop[],
+        displayModal: boolean,
     }
    
 }

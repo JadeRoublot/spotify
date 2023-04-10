@@ -2,18 +2,21 @@ import { Button, Input, Modal } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 import React, { useEffect, useState } from 'react';
 import './PlaylistModalCss.css';
+import { State } from '../store';
+import { setDisplayModal } from '../Slices/playlistsSlice';
 
 const PlaylistModal = () => {
-    //const dispatch = useDispatch();
-    const [isModalOpen, setIsModalOpen] = useState(true);
+    const dispatch = useDispatch();
+    const isModalOpen = useSelector((state: State) => state.spotify.displayModal)
+    //const [isModalOpen, setIsModalOpen] = useState(true);
     const [newPlaylistName, setNewPlaylistName] = useState<string>();
 
     const handleOk = () => {
-        setIsModalOpen(false);
+        
       };
     
       const handleCancel = () => {
-        setIsModalOpen(false);
+        dispatch(setDisplayModal(false));
       };
 
       
