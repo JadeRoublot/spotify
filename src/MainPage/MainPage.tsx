@@ -30,11 +30,11 @@ const MainPage = () => {
                         <div className={'yourPlaylists'}>
                             <Link  key={`/LikedSong`} to={`/LikedSong`} className={'Link'}>
                                 
-                                <Card className={'CardPlaylist'} bordered={false}>
-                                    <Card className={'CardPlaylistCover'}>
+                                <Card className={'CardPlaylist'} bordered={false} >
+                                    <Card className={'CardPlaylistCover'} bordered={false} style={{background: "linear-gradient(135deg, #4000F4 0%, #603AED 22.48%, #7C6EE6 46.93%, #979FE1 65.71%, #A2B3DE 77.68%, #ADC8DC 88.93%, #C0ECD7 100%)"}}>
                                         <HeartFilled />
                                     </Card>
-                                    <p className = {'textCard'}>Card content</p>
+                                    <p className = {'textCard'}>Liked Songs</p>
                                 </Card>
 
                             </Link>

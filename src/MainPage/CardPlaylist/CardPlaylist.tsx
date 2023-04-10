@@ -17,7 +17,7 @@ const CardPlaylist = (playlist : Playlist) => {
     return (
        
             <div>
-                 <Link to={`/LikedSong`} className={'Link'}>
+                 <Link key={playlist.id} to={playlist.id} className={'Link'}>
                     
                     <Card className={'CardPlaylist'} bordered={false}>
                         <Card className={'CardPlaylistCover'}>
