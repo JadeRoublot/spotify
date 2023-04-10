@@ -5,6 +5,7 @@
     border-radius: 0px;
     margin-right: 30px;
     margin-bottom: 30px;
+    
 }
 
 .Link50 {
@@ -16,12 +17,19 @@
     width: 191px;
     height: 191px;
     border-radius: 14px;
+    text-align: center;
+   
     
+    
+}
+
+.textCoverTop50 {
+   
     font-weight: 700;
     font-size: 35px;
     line-height: 46px;
     text-align: center;
     letter-spacing: -0.04em;
-
-    
+    color: #FFFFFF;
+   
 }

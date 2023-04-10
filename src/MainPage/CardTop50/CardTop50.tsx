@@ -24,9 +24,11 @@ const CardTop50 = (playlistTop : PlaylistTop) => {
                     <Card className={'CardTop50'} bordered={false}>
                         <Card className={'CardTop50Cover'} bordered={false}style={{
                         background: `linear-gradient( #${playlistTop.color1} 0%, #${playlistTop.color2} 100%)`,
-                        }}>
+                        }}> 
+                        <div className={'textCoverTop50'} >
                             <p>TOP 50</p>
                             <p>{playlistTop.year}</p>
+                        </div>
                         </Card>
 
                         <p>TOP 50</p>
