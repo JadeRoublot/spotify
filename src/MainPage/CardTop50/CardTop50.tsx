@@ -7,7 +7,9 @@ import { Card } from 'antd';
 import { Link } from 'react-router-dom';
 import './CardTop50Css.css';
 
-const CardTop50 = () => {
+import {PlaylistTop} from "../../Slices/playlistsSlice";
+
+const CardTop50 = (playlistTop : PlaylistTop) => {
    // const dispatch = useDispatch();
    
     
@@ -20,13 +22,15 @@ const CardTop50 = () => {
                 <Link to={`/LikedSong`} className={'Link50'} >
 
                     <Card className={'CardTop50'} bordered={false}>
-                        <Card className={'CardTop50Cover'} bordered={false}>
+                        <Card className={'CardTop50Cover'} bordered={false}style={{
+                        background: `linear-gradient( #${playlistTop.color1} 0%, #${playlistTop.color2} 100%)`,
+                        }}>
                             <p>TOP 50</p>
-                            <p>Card content</p>
+                            <p>{playlistTop.year}</p>
                         </Card>
 
-                        <p>Card content</p>
-                        <p>Card content</p>
+                        <p>TOP 50</p>
+                        <p>{playlistTop.year}</p>
                     </Card>
 
                 </Link>
