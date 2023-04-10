@@ -6,13 +6,31 @@ import Columns from '../static/columns.json';
 import './PlaylistPageCss.css';
 import HeaderPlaylist from './Header';
 import { useParams } from 'react-router-dom';
+import { Playlist, PlaylistTop } from '../Slices/playlistsSlice';
+import { useSelector } from 'react-redux';
+import { State } from '../store';
 
 const PlaylistPage = () => {
     const param = useParams();
     const data = Data;
     const columns = Columns;
 
-    console.log(param);
+    const playlists: Playlist[] = useSelector((state: State) => state.spotify.playlist);
+    const playlistsTop: PlaylistTop[] = useSelector((state: State) => state.spotify.playlistTop);
+    
+    console.log(param.id);
+
+    const handlePlaylistselect = () => {
+
+        let playlist:Playlist | undefined = playlists.find((playlist:Playlist) => playlist.id === '/Playlist/' + param);
+        let playlistTop:PlaylistTop | undefined = playlistsTop.find((playlistTop:PlaylistTop) => playlistTop.id === '/Top50/' + param);
+
+        if (playlist === undefined) {
+            return playlistTop;
+        } else {
+            return playlist;
+        }
+    }
 
     return (
       
