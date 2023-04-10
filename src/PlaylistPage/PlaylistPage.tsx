@@ -41,8 +41,7 @@ const PlaylistPage = () => {
     return (
       
            <div className="app">
-            
-              <HeaderPlaylist/>
+              <HeaderPlaylist other = {playlistSelect}/>
                 <div className="upper">
                     <div className="body">
                         <Table dataSource={data} columns={columns} />
