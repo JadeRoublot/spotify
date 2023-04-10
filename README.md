@@ -28,7 +28,7 @@
 ### Home page
 
 -   [ ] Display your playlist
--   [ ] Display all the top 50 playlist given in file `src/static/data.json` by year as displayed on figma
+-   [x] Display all the top 50 playlist given in file `src/static/data.json` by year as displayed on figma
 -   [ ] Click on a playlist will redirect to the playlist page
 
 ### Playlist page
