@@ -1,4 +1,4 @@
-import { Input, Modal, Table } from 'antd';
+import { Card, Input, Modal, Table } from 'antd';
 import React, { useEffect, useState } from 'react';
 import { Header } from 'antd/es/layout/layout';
 
@@ -19,8 +19,16 @@ const HeaderPlaylist = ({ other }: Props) => {
     }
 
     return (
-        <div className={'heade'}>
-            <h1>{title}</h1>
+        <div className={'heade'} >
+           <Card className={'CardPlaylistHeade'} bordered={false} style= {{background: `linear-gradient( #${other.color1} 0%, #${other.color2} 100%)`}}>
+          <Card className={'CardPlaylistCoverMainPage'} bordered={false} style= {{background: `linear-gradient( #${other.color1} 0%, #${other.color2} 100%)`}}>       
+          
+          
+          </Card>
+            <div className={'textHeader'} > 
+              <h1>{title}</h1>
+            </div>
+          </Card>
         </div>
     );
 };

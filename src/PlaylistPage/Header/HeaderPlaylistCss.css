@@ -1,5 +1,30 @@
 .heade {
     width: auto;
     height: 245px;
+    background-color: black;
+}
+.CardPlaylistHeade {
+    border-radius: 0px;
+    
+}
+
+.textHeader {
+    width: auto;
+    height: 245px;
+    display: flex;
+   
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 10px;
+    letter-spacing: -0.02em;
+
+    color: #FFFFFF;
+}
+.CardPlaylistCoverMainPage {
+    width: 185px;
+    height: 185px;
+    border-radius: 4px 0px 0px 4px;
+    left: 50px;
+    top: 28px;
    
 }
