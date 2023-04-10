@@ -22,7 +22,10 @@ export interface Music {
     duration: number,
     popularity: number,
 }
-let setColorPlaylist = () => (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+const setColorPlaylist = () => {
+    let n = (Math.random() * 0xFFFFFF << 0).toString(16);
+    return n.padStart( 6 , '0');
+}
 
 const likedSongPlaylist: Playlist = {
     id : '/LikedSong',
