@@ -6,6 +6,9 @@ import { MenuInfo } from 'rc-menu/lib/interface';
 import './Navigation.css';
 import Sider from 'antd/es/layout/Sider';
 import { HeartFilled, HomeFilled, PlusSquareFilled } from '@ant-design/icons';
+import { useDispatch, useSelector } from 'react-redux';
+import { State } from '../store';
+import { setDisplayModal } from '../Slices/playlistsSlice';
 
 
 const menuItems = [
@@ -16,9 +19,11 @@ const menuItems = [
 ];
 
 const Navigation = () => {
+    const dispatch = useDispatch();
     const location = useLocation();
     const navigate = useNavigate();
     const [selectedKey, setSelectedKey] = useState<string[]>();
+    const isModalOpen = useSelector((state: State) => state.spotify.displayModal);
     
     useEffect(() => {
         setSelectedKey([location.pathname]);
@@ -28,6 +33,9 @@ const Navigation = () => {
 
     const handleOnClick = ({ key }: MenuInfo) => {
         navigate(key);
+        if (key === '/AddPlaylist') {
+            dispatch(setDisplayModal(true));
+        }
     };
 
     return (

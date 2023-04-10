@@ -11,15 +11,17 @@ import { Footer } from 'antd/es/layout/layout';
 
 const App = () => (
     <div className="app">
-        <Navigation />
+       
         <Provider store={store}>
+        <Navigation />
             <Routes>
                 <Route path="/MainPage" element={<MainPage />} />
                 <Route path="/LikedSong" element={<PlaylistPage />} />
                 <Route path="*" element={<Navigate to="/MainPage" />} />
             </Routes>
+            <Footer><SpotifyFooter/></Footer>
         </Provider>
-        <Footer><SpotifyFooter/></Footer>
+       
     </div>
 );
 

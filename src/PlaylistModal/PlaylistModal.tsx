@@ -7,7 +7,7 @@ import { setDisplayModal } from '../Slices/playlistsSlice';
 
 const PlaylistModal = () => {
     const dispatch = useDispatch();
-    const isModalOpen = useSelector((state: State) => state.spotify.displayModal)
+    const isModalOpen = useSelector((state: State) => state.spotify.displayModal);
     //const [isModalOpen, setIsModalOpen] = useState(true);
     const [newPlaylistName, setNewPlaylistName] = useState<string>();
 
