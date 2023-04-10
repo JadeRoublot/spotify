@@ -18,12 +18,12 @@ const PlaylistPage = () => {
     const playlists: Playlist[] = useSelector((state: State) => state.spotify.playlist);
     const playlistsTop: PlaylistTop[] = useSelector((state: State) => state.spotify.playlistTop);
     
-    console.log(param.id);
+    
 
     const handlePlaylistselect = () => {
 
-        let playlist:Playlist | undefined = playlists.find((playlist:Playlist) => playlist.id === '/Playlist/' + param);
-        let playlistTop:PlaylistTop | undefined = playlistsTop.find((playlistTop:PlaylistTop) => playlistTop.id === '/Top50/' + param);
+        let playlist:Playlist | undefined = playlists.find((playlist:Playlist) => playlist.id === '/Playlist/' + param.id);
+        let playlistTop:PlaylistTop | undefined = playlistsTop.find((playlistTop:PlaylistTop) => playlistTop.id === '/Top50/' + param.year);
 
         if (playlist === undefined) {
             return playlistTop;
@@ -31,6 +31,8 @@ const PlaylistPage = () => {
             return playlist;
         }
     }
+
+    console.log(handlePlaylistselect());
 
     return (
       
