@@ -16,11 +16,11 @@ import {PlaylistTop, Playlist} from "../Slices/playlistsSlice";
 
 const MainPage = () => {
     const dispatch = useDispatch();
-    const playlist: Playlist[] = useSelector((state: State) => state.spotify.playlists);
+    const playlist: Playlist[] = useSelector((state: State) => state.spotify.playlist);
     const playlistTop: PlaylistTop[] = useSelector((state: State) => state.spotify.playlistTop);
-    const [isModalOpen, setIsModalOpen] = useState(false);
+
     
-    //console.log(playlistTop);
+    console.log(playlist);
     return (
        
             <div className="app">
@@ -28,7 +28,7 @@ const MainPage = () => {
                     <div className="body">
                         <h1 className = {'titleHomePage'}>Your playlists</h1>
                         <div className={'yourPlaylists'}>
-                            <Link to={`/LikedSong`} className={'Link'}>
+                            <Link  key={`/LikedSong`} to={`/LikedSong`} className={'Link'}>
                                 
                                 <Card className={'CardPlaylist'} bordered={false}>
                                     <Card className={'CardPlaylistCover'}>
@@ -38,14 +38,21 @@ const MainPage = () => {
                                 </Card>
 
                             </Link>
-                        
-                            <CardPlaylist />
+                            {playlist.map((playlist) => {
+                                if(playlist.title !== "Liked Songs") {
+                                    return <CardPlaylist id={playlist.id} title={playlist.title} music={playlist.music} color1={playlist.color1} color2={playlist.color2}/>;
+                                } else {
+                                return null;
+                            }})}
+                           
+                            
                         </div>
                         <h1 className = {'titleHomePage'}>Top 50</h1>
                          <div className={'yourPlaylists'}> 
-                        {playlistTop.map((playlist) => {
-                            return <CardTop50 id  = {playlist.id } title={playlist.title} music={playlist.music} color1={playlist.color1} color2={playlist.color2} year={playlist.year}/>;
-                        })}
+
+                            {playlistTop.map((playlist) => {
+                                return <CardTop50 id  = {playlist.id } title={playlist.title} music={playlist.music} color1={playlist.color1} color2={playlist.color2} year={playlist.year}/>;
+                            })}
                            
                         </div> 
                     </div>

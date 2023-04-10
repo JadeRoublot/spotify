@@ -6,8 +6,9 @@ import { State } from '../../store';
 import { Card } from 'antd';
 import { Link } from 'react-router-dom';
 import './CardPlaylistCss.css';
+import { Playlist } from '../../Slices/playlistsSlice';
 
-const CardPlaylist = () => {
+const CardPlaylist = (playlist : Playlist) => {
    // const dispatch = useDispatch();
    
     

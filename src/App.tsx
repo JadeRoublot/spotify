@@ -18,7 +18,7 @@ const App = () => (
                 <Route path="/MainPage" element={<MainPage />} />
                 <Route path="/LikedSong" element={<PlaylistPage />} />
                 <Route path="/Playlist/:id" element={<PlaylistPage />} />
-                <Route path="/Top50/:id" element={<PlaylistPage />} />
+                <Route path="/Top50/:year" element={<PlaylistPage />} />
                 <Route path="*" element={<Navigate to="/MainPage" />} />
             </Routes>
             <Footer><SpotifyFooter/></Footer>

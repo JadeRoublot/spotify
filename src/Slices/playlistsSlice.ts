@@ -32,7 +32,7 @@ const likedSongPlaylist: Playlist = {
     title : "Liked Songs",
     music: [],
     color1: "#4000F4",
-    color2: "#C0ECD7"
+    color2: "#C0ECD7",
 }
 
 const createTop50 = () => {
@@ -43,7 +43,7 @@ const createTop50 = () => {
         let musicbyYears = musics.filter(musics => musics.year === i)
         
         const top50: PlaylistTop = {
-            id : '/Top50/' + i,
+            id : '/Top50/top' + i,
             title: "TOP 50",
             music: musicbyYears,
             color1: setColorPlaylist(),
@@ -60,7 +60,7 @@ const createTop50 = () => {
 export const playlistsSlice = createSlice({
     name: 'spotify',
     initialState: {
-        playlist: [ likedSongPlaylist ,],
+        playlist: [likedSongPlaylist,],
         playlistTop: createTop50(),
         displayModal: false,
         music : data,
