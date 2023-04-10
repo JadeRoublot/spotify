@@ -27,6 +27,11 @@ const setColorPlaylist = () => {
     return n.padStart( 6 , '0');
 }
 
+const setId = () => {
+    let r = (Math.random() + 1).toString(36).substring(7);
+    return r;
+}
+
 const likedSongPlaylist: Playlist = {
     id : '/Playlist/LikedSong',
     title : "Liked Songs",
@@ -76,12 +81,21 @@ export const playlistsSlice = createSlice({
             state.displayModal = action.payload
         },
 
+        newPlaylist: (state: {playlist: Playlist[]}, action: { payload: string }) => {
+            state.playlist.push ({
+                id:'/Playlist/' + setId(),
+                title : action.payload,
+                music : [],
+                color1: setColorPlaylist(),
+                color2: setColorPlaylist(),
+            });
+        },
 
        }
 
     },
 );
 
-export const {setPlaylist, setDisplayModal} =  playlistsSlice.actions;
+export const {setPlaylist, setDisplayModal, newPlaylist} =  playlistsSlice.actions;
 
 export default  playlistsSlice.reducer;
