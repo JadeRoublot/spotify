@@ -20,23 +20,28 @@ const PlaylistPage = () => {
     
     
 
-    const handlePlaylistselect = () => {
+    const handlePlaylistselect = () : Playlist | PlaylistTop => {
 
         let playlist:Playlist | undefined = playlists.find((playlist:Playlist) => playlist.id === '/Playlist/' + param.id);
         let playlistTop:PlaylistTop | undefined = playlistsTop.find((playlistTop:PlaylistTop) => playlistTop.id === '/Top50/' + param.year);
-
         if (playlist === undefined) {
-            return playlistTop;
+            
+            if (playlistTop !== undefined) {
+                return playlistTop;
+            }
+
         } else {
             return playlist;
         }
+        throw new Error('Neither playlist nor playlistTop exists');
     }
-
+    let playlistSelect = handlePlaylistselect();
     console.log(handlePlaylistselect());
 
     return (
       
            <div className="app">
+            
               <HeaderPlaylist/>
                 <div className="upper">
                     <div className="body">
