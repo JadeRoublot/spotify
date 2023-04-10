@@ -8,18 +8,15 @@ import Sider from 'antd/es/layout/Sider';
 import { HeartFilled, HomeFilled, PlusSquareFilled } from '@ant-design/icons';
 import { useDispatch, useSelector } from 'react-redux';
 import { State } from '../store';
-import { setDisplayModal } from '../Slices/playlistsSlice';
+import { Playlist, setDisplayModal } from '../Slices/playlistsSlice';
 
 
-const menuItems = [
-    { key: '/MainPage', label: 'Home' , icon : <HomeFilled />},
-    { key: '/AddPlaylist', label: 'AddPlaylist' , icon : <PlusSquareFilled />},
-    { key: '/Playlist/LikedSong', label: 'LikedSong',icon : <HeartFilled /> },
-    
-];
+
 
 const Navigation = () => {
+    
     const dispatch = useDispatch();
+    const playlist: Playlist[] = useSelector((state: State) => state.spotify.playlist);
     const location = useLocation();
     const navigate = useNavigate();
     const [selectedKey, setSelectedKey] = useState<string[]>();
@@ -29,7 +26,23 @@ const Navigation = () => {
         setSelectedKey([location.pathname]);
     }, [location]);
 
-   
+   const handleMenu = () => {
+        const menuItems = [
+            { key: '/MainPage', label: 'Home' , icon : <HomeFilled />},
+            { key: '/AddPlaylist', label: 'AddPlaylist' , icon : <PlusSquareFilled />},
+            { key: '/Playlist/LikedSong', label: 'LikedSong',icon : <HeartFilled /> },
+            
+        ];
+        {playlist.map((playlist) => {
+            if(playlist.title !== "Liked Songs") {
+                menuItems.push({
+                    key: playlist.id,
+                    label: playlist.title,
+                    icon: <HeartFilled className = {'unwantedIcon'}/> ,
+                })
+            }})}
+        return menuItems;
+   }
 
     const handleOnClick = ({ key }: MenuInfo) => {
         navigate(key);
@@ -50,7 +63,7 @@ const Navigation = () => {
         <Menu  
         mode="inline" 
         defaultSelectedKeys={selectedKey} 
-        items={menuItems} 
+        items={handleMenu()} 
         onClick={handleOnClick}/>
       </Sider>
       

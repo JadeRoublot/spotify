@@ -3,6 +3,10 @@
     
 }
 
+.unwantedIcon {
+    opacity: 0;
+}
+
 footer , .ant_layout-footer{
    background: #181818 !important;
    position:fixed;
