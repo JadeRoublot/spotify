@@ -29,7 +29,7 @@
 
 -   [ ] Display your playlist
 -   [x] Display all the top 50 playlist given in file `src/static/data.json` by year as displayed on figma
--   [ ] Click on a playlist will redirect to the playlist page
+-   [x] Click on a playlist will redirect to the playlist page
 
 ### Playlist page
 
