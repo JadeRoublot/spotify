@@ -12,8 +12,9 @@ const PlaylistModal = () => {
     const [newPlaylistName, setNewPlaylistName] = useState<string>();
 
     const handleOk = () => {
-        
-      };
+        console.log(newPlaylistName);
+        dispatch(setDisplayModal(false));
+    };
     
       const handleCancel = () => {
         dispatch(setDisplayModal(false));

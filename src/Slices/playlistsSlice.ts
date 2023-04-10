@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import data from '../static/data.json';
 
 export interface Playlist {
+    key : string,
     title: string,
     music : Music[],
     color1 : string,
@@ -24,6 +25,7 @@ export interface Music {
 let setColorPlaylist = () => (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
 
 const likedSongPlaylist: Playlist = {
+    key: '/LikedSong',
     title : "Liked Songs",
     music: [],
     color1: "#4000F4",
@@ -34,10 +36,11 @@ const createTop50 = () => {
     const listTop50 = [];
     const musics = data;
 
-    for (let i = 2010; i < 2020; i++) {
+    for (let i = 2019; i > 2009; i--) {
         let musicbyYears = musics.filter(musics => musics.year === i)
         
         const top50: PlaylistTop = {
+            key: '/Top50/' + i ,
             title: "TOP 50",
             music: musicbyYears,
             color1: setColorPlaylist(),
