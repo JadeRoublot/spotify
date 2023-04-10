@@ -12,8 +12,6 @@ import {PlaylistTop} from "../../Slices/playlistsSlice";
 const CardTop50 = (playlistTop : PlaylistTop) => {
    // const dispatch = useDispatch();
    
-    
-    console.log(playlistTop.id);
 
     return (
        
