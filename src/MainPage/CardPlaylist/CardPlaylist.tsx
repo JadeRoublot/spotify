@@ -20,11 +20,13 @@ const CardPlaylist = (playlist : Playlist) => {
                  <Link key={playlist.id} to={playlist.id} className={'Link'}>
                     
                     <Card className={'CardPlaylist'} bordered={false}>
-                        <Card className={'CardPlaylistCover'}>
+                        <Card className={'CardPlaylistCover'} bordered={false} style={{
+                        background: `linear-gradient( #${playlist.color1} 0%, #${playlist.color2} 100%)`,
+                        }}>
                            
                            
                         </Card>
-                        <p className = {'textCard'}>Card content</p>
+                        <p className = {'textCard'}>{playlist.title}</p>
                        
                     </Card>
 

@@ -3,16 +3,17 @@ import { useDispatch, useSelector } from 'react-redux';
 import React, { useEffect, useState } from 'react';
 import './PlaylistModalCss.css';
 import { State } from '../store';
-import { setDisplayModal } from '../Slices/playlistsSlice';
+import { setDisplayModal, newPlaylist } from '../Slices/playlistsSlice';
 
 const PlaylistModal = () => {
     const dispatch = useDispatch();
     const isModalOpen = useSelector((state: State) => state.spotify.displayModal);
     //const [isModalOpen, setIsModalOpen] = useState(true);
-    const [newPlaylistName, setNewPlaylistName] = useState<string>();
+    const [newPlaylistName, setNewPlaylistName] = useState<string>("");
 
     const handleOk = () => {
         console.log(newPlaylistName);
+        dispatch(newPlaylist(newPlaylistName));
         dispatch(setDisplayModal(false));
     };
     
