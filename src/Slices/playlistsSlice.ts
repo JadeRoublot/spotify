@@ -28,7 +28,7 @@ const setColorPlaylist = () => {
 }
 
 const likedSongPlaylist: Playlist = {
-    id : '/LikedSong',
+    id : '/Playlist/LikedSong',
     title : "Liked Songs",
     music: [],
     color1: "#4000F4",

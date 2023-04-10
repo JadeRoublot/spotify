@@ -14,7 +14,7 @@ import { setDisplayModal } from '../Slices/playlistsSlice';
 const menuItems = [
     { key: '/MainPage', label: 'Home' , icon : <HomeFilled />},
     { key: '/AddPlaylist', label: 'AddPlaylist' , icon : <PlusSquareFilled />},
-    { key: '/LikedSong', label: 'LikedSong',icon : <HeartFilled /> },
+    { key: '/Playlist/LikedSong', label: 'LikedSong',icon : <HeartFilled /> },
     
 ];
 

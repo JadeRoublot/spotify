@@ -16,7 +16,6 @@ const App = () => (
         <Navigation />
             <Routes>
                 <Route path="/MainPage" element={<MainPage />} />
-                <Route path="/LikedSong" element={<PlaylistPage />} />
                 <Route path="/Playlist/:id" element={<PlaylistPage />} />
                 <Route path="/Top50/:year" element={<PlaylistPage />} />
                 <Route path="*" element={<Navigate to="/MainPage" />} />
