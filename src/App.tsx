@@ -5,6 +5,8 @@ import MainPage from './MainPage';
 import PlaylistPage from './PlaylistPage';
 import { Provider } from 'react-redux';
 import store from './store';
+import SpotifyFooter from './SpotifyFooter';
+import { Footer } from 'antd/es/layout/layout';
 
 
 const App = () => (
@@ -17,6 +19,7 @@ const App = () => (
                 <Route path="*" element={<Navigate to="/MainPage" />} />
             </Routes>
         </Provider>
+        <Footer><SpotifyFooter/></Footer>
     </div>
 );
 
