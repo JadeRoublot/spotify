@@ -44,7 +44,7 @@ const MainPage = () => {
                         <h1 className = {'titleHomePage'}>Top 50</h1>
                          <div className={'yourPlaylists'}> 
                         {playlistTop.map((playlist) => {
-                            return <CardTop50 key = {playlist.key} title={playlist.title} music={playlist.music} color1={playlist.color1} color2={playlist.color2} year={playlist.year}/>;
+                            return <CardTop50 id  = {playlist.id } title={playlist.title} music={playlist.music} color1={playlist.color1} color2={playlist.color2} year={playlist.year}/>;
                         })}
                            
                         </div> 

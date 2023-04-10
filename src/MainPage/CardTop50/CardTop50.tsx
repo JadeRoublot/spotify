@@ -13,13 +13,13 @@ const CardTop50 = (playlistTop : PlaylistTop) => {
    // const dispatch = useDispatch();
    
     
-    
+    console.log(playlistTop.id);
 
     return (
        
             <div>
 
-                <Link to={`/LikedSong`} className={'Link50'} >
+                <Link  key={playlistTop.id} to={playlistTop.id} className={'Link50'} >
 
                     <Card className={'CardTop50'} bordered={false}>
                         <Card className={'CardTop50Cover'} bordered={false}style={{
