@@ -30,8 +30,8 @@ const CardTop50 = (playlistTop : PlaylistTop) => {
                         </div>
                         </Card>
 
-                        <p>TOP 50</p>
-                        <p>{playlistTop.year}</p>
+                        <p className={'Top50l1'}>TOP 50</p>
+                        <p className={'Top50l2'}>{playlistTop.year}</p>
                     </Card>
 
                 </Link>

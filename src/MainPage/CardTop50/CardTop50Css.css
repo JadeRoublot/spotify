@@ -33,3 +33,21 @@
     color: #FFFFFF;
    
 }
+
+.Top50l1{
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 27px;
+    letter-spacing: -0.02em;
+    
+    color: #FFFFFF;
+}
+
+.Top50l2{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+
+    color: #B3B3B3;
+}
