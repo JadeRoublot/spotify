@@ -48,3 +48,9 @@ flex-grow: 1;
     height: 56px;
     width: 280px;
 }
+
+.HeartIconCover {
+    color: white;
+    text-align: center;
+    font-size: 29px;
+}
