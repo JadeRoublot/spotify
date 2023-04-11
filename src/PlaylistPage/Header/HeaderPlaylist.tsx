@@ -18,6 +18,7 @@ const HeaderPlaylist = ({ other }: Props) => {
         title = other.title +  ' ' + other.year;
         display = title;
     } else if (other.title === 'Liked Songs') {
+        title = other.title;
         display = <HeartFilled />;
     }else {
         title = other.title;
@@ -28,7 +29,6 @@ const HeaderPlaylist = ({ other }: Props) => {
         <div className={'heade'} >
            <Card className={'CardPlaylistHeade'} bordered={false} style= {{background: `linear-gradient( #${other.color1} 0%, #${other.color2} 100%)`}}>
           <Card className={'CardPlaylistCoverMainPage'} bordered={false} style= {{background: `linear-gradient( #${other.color1} 0%, #${other.color2} 100%)`}}>       
-          
             {display}
           </Card>
             <div className={'textHeader'} > 
