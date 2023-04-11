@@ -36,8 +36,8 @@ const likedSongPlaylist: Playlist = {
     id : '/Playlist/LikedSong',
     title : "Liked Songs",
     music: [],
-    color1: "#4000F4",
-    color2: "#C0ECD7",
+    color1: "4000F4",
+    color2: "C0ECD7",
 }
 
 const createTop50 = () => {
