@@ -2,10 +2,11 @@
     width: auto;
     height: 245px;
     background-color: black;
+    
 }
 .CardPlaylistHeade {
     border-radius: 0px;
-    
+    text-align: center;
 }
 
 .textHeader {
