@@ -49,10 +49,12 @@ const PlaylistPage = () => {
     };
 
     const Sorting = (music : Music[]) => {
+        console.log(sortOption);
         return music;
     };
 
     const Searching = (music : Music[]) => {
+        console.log(search);
         return music;
     };
 
@@ -62,8 +64,11 @@ const PlaylistPage = () => {
             return Searching(playlistSelect.music);
 
         }else if (sortOption !==undefined) {
+
             return Sorting(playlistSelect.music);
+
         } else {
+
             return playlistSelect.music;
         }
      
