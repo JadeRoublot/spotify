@@ -38,7 +38,7 @@
     -   [x] Playlist cover
     -   [x] Playlist name
 -   [ ] Body
-    -   [ ] Text input to filter on any data in the current playlist (case insensitive)
+    -   [x] Text input to filter on any data in the current playlist (case insensitive)
     -   [x] Select input with sorting on 
         -   [x] Title
         -   [x] Year
