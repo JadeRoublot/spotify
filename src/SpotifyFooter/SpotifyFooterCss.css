@@ -5,7 +5,13 @@
     letter-spacing: -0.05em;
 
     color: #FFFFFF;
+    display: flex;
 
+}
+
+.colMusicPlayedFooter {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .artistMusicFooter {
@@ -13,11 +19,13 @@
     font-size: 15px;
     line-height: 20px;
     letter-spacing: -0.05em;
-
     color: #B3B3B3;
 
 }
-
+.CoverPlaylistFooter {
+    width: 75px;
+    height: 75px;
+}
 .customSvg {
     color:#C4C4C4;
     height: 20px !important;

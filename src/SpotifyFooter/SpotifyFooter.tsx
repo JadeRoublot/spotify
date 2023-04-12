@@ -37,7 +37,8 @@ const SpotifyFooter = () => {
       
         <div >
             <Row justify="space-around" align="middle"> 
-                <Col span={7}  >
+                <Col span={7} className={'colMusicPlayedFooter'} >
+
                 <Card className={'CoverPlaylistFooter'} bordered={false} style={{
                         background: `linear-gradient( #${playingSong.playlist.color1} 0%, #${playingSong.playlist.color2} 100%)`,
                         }}>
