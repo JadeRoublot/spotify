@@ -44,9 +44,12 @@ const SpotifyFooter = () => {
                         }}>
                             <h1 className={'titleInCoverFooter'}>{display}</h1>
                 </Card>
+
+                <div>
                     <h1 className={'titleMusicFooter'}>{playingSong.music.title}</h1>
                     <h1 className={'artistMusicFooter'}>{playingSong.music.artist}</h1>
-
+                </div>
+                
                 </Col>
                 <Col span={10} >
                 <div className ="centerFooter">

@@ -12,6 +12,7 @@
 .colMusicPlayedFooter {
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .artistMusicFooter {
@@ -20,7 +21,7 @@
     line-height: 20px;
     letter-spacing: -0.05em;
     color: #B3B3B3;
-
+    
 }
 .CoverPlaylistFooter {
     width: 75px;
