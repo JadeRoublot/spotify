@@ -49,7 +49,7 @@ const PlaylistPage = () => {
     };
 
     const Sorting = (music : Music[]) => {
-
+        let musicSorted  = music;
         switch(sortOption) {
             case "title":
               console.log("title")
@@ -68,12 +68,13 @@ const PlaylistPage = () => {
                 break;;
                 
         }
-        return music;
+        return musicSorted;
     };
 
     const Searching = (music : Music[]) => {
+        let musicSearch  = music;
         console.log(search);
-        return music;
+        return musicSearch;
     };
 
     const getMusic = (search: string | undefined , sortOption: string | undefined ,) => {
