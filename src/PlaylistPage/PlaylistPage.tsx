@@ -22,7 +22,6 @@ const PlaylistPage = () => {
     const [ search, setSearch] = useState<string>();
     const [sortOption, setSortOption] = useState<string>();
     
-
     const handlePlaylistselect = () : Playlist | PlaylistTop => {
 
         let playlist:Playlist | undefined = playlists.find((playlist:Playlist) => playlist.id === '/Playlist/' + param.id);
@@ -38,6 +37,7 @@ const PlaylistPage = () => {
         }
         throw new Error('Neither playlist nor playlistTop exists');
     }
+
     let playlistSelect = handlePlaylistselect();
 
     const handleOnChangeSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -45,7 +45,11 @@ const PlaylistPage = () => {
     };
 
     const handleSortedChange = ( newSortedOption: string) => {
-        
+        setSortOption(newSortedOption);
+    };
+
+    const getMusic = ( ) => {
+       return playlistSelect.music;
     };
 
     return (
@@ -67,7 +71,10 @@ const PlaylistPage = () => {
                                 { value: 'popularity', label: 'Popularity' },
                             ]}
                         />
-                        <Table  bordered={false} dataSource={playlistSelect.music} columns={columns} pagination={false}/>
+                        <Table  bordered={false} 
+                        dataSource={getMusic()} 
+                        columns={columns} 
+                        pagination={false}/>
                     </div>
                  </div>
             </div>
