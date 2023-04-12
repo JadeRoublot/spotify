@@ -113,6 +113,11 @@ export const playlistsSlice = createSlice({
             state.displayMenu = action.payload
         },
 
+        setMusicPlayed: (state: { musicPlayed: MusicPlayed }, action: { payload: [Playlist , Music]}) => {
+            state.musicPlayed.playlist = action.payload[0];
+            state.musicPlayed.music = action.payload[1];
+        },
+
         newPlaylist: (state: {playlist: Playlist[]}, action: { payload: string }) => {
             state.playlist.push ({
                 id:'/Playlist/' + setId(),
@@ -128,6 +133,6 @@ export const playlistsSlice = createSlice({
     },
 );
 
-export const {setPlaylist, setDisplayModal,setDisplayMenu, newPlaylist} =  playlistsSlice.actions;
+export const {setPlaylist, setDisplayModal,setDisplayMenu, setMusicPlayed, newPlaylist} =  playlistsSlice.actions;
 
 export default  playlistsSlice.reducer;
