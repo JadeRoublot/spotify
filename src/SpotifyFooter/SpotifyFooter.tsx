@@ -3,10 +3,14 @@ import React, { useEffect, useState } from 'react';
 import { Image } from 'antd';
 import './SpotifyFooterCss.css';
 import { ArrowsAltOutlined, CaretRightOutlined, RetweetOutlined, StepBackwardOutlined, StepForwardOutlined } from '@ant-design/icons';
+import { State } from '../store';
+import { useSelector } from 'react-redux';
+import { MusicPlayed } from '../Slices/playlistsSlice';
 
 const SpotifyFooter = () => {
   
     const [inputValue, setInputValue] = useState(0.00);
+    const playingSong: MusicPlayed = useSelector((state: State) => state.spotify.musicPlayed);
 
     const onChange = (value: number) => {
         if (isNaN(value)) {
@@ -40,14 +44,14 @@ const SpotifyFooter = () => {
                 <h1>{inputValue}</h1>
                 <Slider
                     min={0.00}
-                    max={1}
+                    max={playingSong.music.duration}
                     onChange={onChange}
                     value={typeof inputValue === 'number' ? inputValue : 0}
                     step={0.01}
                     className ="slide"
                     />
 
-                <h1>[placeholer max]</h1>   
+                <h1>{playingSong.music.duration}</h1>   
             </div>   
                 </Col>
 
