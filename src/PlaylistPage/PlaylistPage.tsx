@@ -54,10 +54,11 @@ const PlaylistPage = () => {
                             className={'selectPlaylist'}
                             onChange={handleSortedChange}
                             options={[
-                                { value: 'jack', label: 'Jack' },
-                                { value: 'lucy', label: 'Lucy' },
-                                { value: 'Yiminghe', label: 'yiminghe' },
-                                { value: 'disabled', label: 'Disabled', disabled: true },
+                                { value: 'title', label: 'Title' },
+                                { value: 'genre', label: 'Genre' },
+                                { value: 'year', label: 'Year' },
+                                { value: 'duration', label: 'Duration' },
+                                { value: 'popularity', label: 'Popularity' },
                             ]}
                         />
                         <Table  bordered={false} dataSource={playlistSelect.music} columns={columns} pagination={false}/>
