@@ -48,8 +48,18 @@ const PlaylistPage = () => {
         setSortOption(newSortedOption);
     };
 
-    const getMusic = ( ) => {
+    const Sorting = () => {
+       
+    };
+
+    const Searching = () => {
+       
+    };
+
+    const getMusic = (search: string | undefined , sortOption: string | undefined ,) => {
+
        return playlistSelect.music;
+
     };
 
     return (
@@ -72,7 +82,7 @@ const PlaylistPage = () => {
                             ]}
                         />
                         <Table  bordered={false} 
-                        dataSource={getMusic()} 
+                        dataSource={getMusic( search , sortOption )} 
                         columns={columns} 
                         pagination={false}/>
                     </div>
