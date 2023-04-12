@@ -48,9 +48,10 @@ const PlaylistPage = () => {
               <HeaderPlaylist other = {playlistSelect}/>
                 <div className="upper">
                     <div className="body">
-                        <Input  prefix = {<SearchOutlined />} placeholder="Artists, songs, or podcasts" />
+                        <Input className={'inputPlaylist'} prefix = {<SearchOutlined />} placeholder="Artists, songs, or podcasts" />
                         <Select
                             placeholder={"Custom order"}
+                            className={'selectPlaylist'}
                             onChange={handleSortedChange}
                             options={[
                                 { value: 'jack', label: 'Jack' },
