@@ -1,4 +1,4 @@
-import { Input, Modal, Table } from 'antd';
+import { Input, Modal, Select, Table } from 'antd';
 import React, { useEffect, useState } from 'react';
 import { Header } from 'antd/es/layout/layout';
 import Data from '../static/data.json';
@@ -9,6 +9,7 @@ import { useParams } from 'react-router-dom';
 import { Playlist, PlaylistTop } from '../Slices/playlistsSlice';
 import { useSelector } from 'react-redux';
 import { State } from '../store';
+import { SearchOutlined } from '@ant-design/icons';
 
 const PlaylistPage = () => {
     const param = useParams();
@@ -36,7 +37,10 @@ const PlaylistPage = () => {
         throw new Error('Neither playlist nor playlistTop exists');
     }
     let playlistSelect = handlePlaylistselect();
-    console.log(handlePlaylistselect());
+
+    const handleSortedChange = (sortedOption: string) => {
+        
+    };
 
     return (
       
@@ -44,7 +48,17 @@ const PlaylistPage = () => {
               <HeaderPlaylist other = {playlistSelect}/>
                 <div className="upper">
                     <div className="body">
-                        <Input placeholder="Basic usage" />
+                        <Input  prefix = {<SearchOutlined />} placeholder="Artists, songs, or podcasts" />
+                        <Select
+                            placeholder={"Custom order"}
+                            onChange={handleSortedChange}
+                            options={[
+                                { value: 'jack', label: 'Jack' },
+                                { value: 'lucy', label: 'Lucy' },
+                                { value: 'Yiminghe', label: 'yiminghe' },
+                                { value: 'disabled', label: 'Disabled', disabled: true },
+                            ]}
+                        />
                         <Table  bordered={false} dataSource={playlistSelect.music} columns={columns} pagination={false}/>
                     </div>
                  </div>
