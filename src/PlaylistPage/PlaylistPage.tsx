@@ -6,12 +6,13 @@ import Columns from '../static/columns.json';
 import './PlaylistPageCss.css';
 import HeaderPlaylist from './Header';
 import { useParams } from 'react-router-dom';
-import { Music, Playlist, PlaylistTop } from '../Slices/playlistsSlice';
-import { useSelector } from 'react-redux';
+import { Music, Playlist, PlaylistTop, setMusicPlayed } from '../Slices/playlistsSlice';
+import { useDispatch, useSelector } from 'react-redux';
 import { State } from '../store';
 import { SearchOutlined } from '@ant-design/icons';
 
 const PlaylistPage = () => {
+    const dispatch = useDispatch();
     const param = useParams();
     const data = Data;
     const columns = Columns;
@@ -133,7 +134,16 @@ const PlaylistPage = () => {
                         <Table  bordered={false} 
                         dataSource={getMusic( search , sortOption )} 
                         columns={columns} 
-                        pagination={false}/>
+                        pagination={false}
+                        onRow={(record, rowIndex) => {
+                            return {
+                              onClick: (event) => {
+                               
+                                dispatch(setMusicPlayed([playlistSelect , record]))
+                            }, 
+                             
+                            };
+                          }}/>
                     </div>
                  </div>
             </div>
