@@ -76,12 +76,17 @@ const PlaylistPage = () => {
     const Searching = (music : Music[]) => {
         let musicSearch : Music[] = [...music];
         
-        console.log(musicSearch.filter((music) =>
-         music.title.startsWith(search!) || 
-         music.title.toLowerCase().startsWith(search!)||
-         music.genre.startsWith(search!) ||
-         music.genre.toLowerCase().startsWith(search!) ) );
-         
+        musicSearch = musicSearch.filter((music) =>
+            music.title.startsWith(search!) || 
+            music.title.toLowerCase().startsWith(search!)||
+            music.genre.startsWith(search!) ||
+            music.genre.toLowerCase().startsWith(search!) ||
+            music.artist.startsWith(search!) ||
+            music.artist.toLowerCase().startsWith(search!) ||
+            music.year.toString().startsWith(search!) ||
+            music.popularity.toString().startsWith(search!) ||
+            music.duration.toString().startsWith(search!));
+
         return musicSearch;
     };
 
