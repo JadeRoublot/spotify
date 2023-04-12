@@ -19,6 +19,8 @@ const PlaylistPage = () => {
     const playlists: Playlist[] = useSelector((state: State) => state.spotify.playlist);
     const playlistsTop: PlaylistTop[] = useSelector((state: State) => state.spotify.playlistTop);
     
+    const [ search, setSearch] = useState<string>();
+    const [sortOption, setSortOption] = useState<string>();
     
 
     const handlePlaylistselect = () : Playlist | PlaylistTop => {
@@ -38,7 +40,7 @@ const PlaylistPage = () => {
     }
     let playlistSelect = handlePlaylistselect();
 
-    const handleSortedChange = (sortedOption: string) => {
+    const handleSortedChange = ( newSortedOption: string) => {
         
     };
 
