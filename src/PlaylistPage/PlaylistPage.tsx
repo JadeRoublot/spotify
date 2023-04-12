@@ -55,16 +55,16 @@ const PlaylistPage = () => {
                 musicSorted.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
             break;;
             case "genre":
-                console.log("genre")
+                musicSorted.sort((a,b) => (a.genre > b.genre) ? 1 : ((b.genre > a.genre) ? -1 : 0));
                 break;;
             case "year":
                musicSorted.sort((a, b) => a.year - b.year);
                 break;;
             case "duration":
-                console.log("duration")
+                musicSorted.sort((a, b) => a.duration - b.duration);
                 break;;
             case "popularity":
-                console.log("popularity")
+                musicSorted.sort((a, b) => a.popularity - b.popularity);
                 break;;
                 
         }
