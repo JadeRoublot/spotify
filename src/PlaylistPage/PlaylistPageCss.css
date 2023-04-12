@@ -1,5 +1,7 @@
-.ant-table-content, .ant-table-thead {
-   
+.ant-table-content, .ant-table-thead, .ant-table-cell , .ant-table{
+    color: #FFFFFF !important; 
+    border: 0px !important;
+    background-color: transparent !important;
 }
 
 .inputPlaylist {

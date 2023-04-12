@@ -74,7 +74,7 @@ const PlaylistPage = () => {
     };
 
     const Searching = (music : Music[]) => {
-        let musicSearch  = music;
+        let musicSearch : Music[] = [...music];
         console.log(search);
         return musicSearch;
     };
