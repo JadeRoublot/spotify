@@ -35,7 +35,7 @@
 
 -   [ ] Header 
     -   [ ] Color background based on playlist's cover color
-    -   [ ] Playlist cover
+    -   [x] Playlist cover
     -   [x] Playlist name
 -   [ ] Body
     -   [ ] Text input to filter on any data in the current playlist (case insensitive)
