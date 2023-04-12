@@ -49,7 +49,25 @@ const PlaylistPage = () => {
     };
 
     const Sorting = (music : Music[]) => {
-        console.log(sortOption);
+
+        switch(sortOption) {
+            case "title":
+              console.log("title")
+            break;;
+            case "genre":
+                console.log("genre")
+                break;;
+            case "year":
+                console.log("year")
+                break;;
+            case "duration":
+                console.log("duration")
+                break;;
+            case "popularity":
+                console.log("popularity")
+                break;;
+                
+        }
         return music;
     };
 
