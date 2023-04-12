@@ -46,6 +46,27 @@ const likedSongPlaylist: Playlist = {
     color2: "C0ECD7",
 }
 
+const defaultMusicPlayed: MusicPlayed = {
+
+    playlist: {
+        id:'default',
+        title: 'No Playlist',
+        music: [],
+        color1: setColorPlaylist(),
+        color2: setColorPlaylist(),
+    },
+    music: {
+
+        title:'No Music',
+        artist: 'Nobody',
+        genre: 'Void',
+        year: 0,
+        duration : 0,
+        popularity:0
+    }
+}
+
+
 const createTop50 = () => {
     const listTop50 = [];
     const musics = data;
@@ -76,7 +97,7 @@ export const playlistsSlice = createSlice({
         displayModal: false,
         displayMenu: false,
         music : data,
-        
+        musicPlayed : defaultMusicPlayed,
     },
 
     reducers: {
