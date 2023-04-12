@@ -59,18 +59,23 @@ const PlaylistPage = () => {
     };
 
     const getMusic = (search: string | undefined , sortOption: string | undefined ,) => {
+        
+        let musicOfPlaylist = playlistSelect.music;
+        
         if (search !== undefined) {
 
-            return Searching(playlistSelect.music);
+             Searching(musicOfPlaylist);
 
-        }else if (sortOption !==undefined) {
-
-            return Sorting(playlistSelect.music);
-
-        } else {
-
-            return playlistSelect.music;
         }
+        
+        if (sortOption !== undefined) {
+
+             Sorting(musicOfPlaylist);
+
+        }
+
+            return musicOfPlaylist;
+        
      
     };
 
