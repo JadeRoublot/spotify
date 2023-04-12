@@ -33,8 +33,8 @@
 
 ### Playlist page
 
--   [ ] Header 
-    -   [ ] Color background based on playlist's cover color
+-   [x] Header 
+    -   [x] Color background based on playlist's cover color
     -   [x] Playlist cover
     -   [x] Playlist name
 -   [ ] Body
