@@ -6,7 +6,7 @@ import Columns from '../static/columns.json';
 import './PlaylistPageCss.css';
 import HeaderPlaylist from './Header';
 import { useParams } from 'react-router-dom';
-import { Playlist, PlaylistTop } from '../Slices/playlistsSlice';
+import { Music, Playlist, PlaylistTop } from '../Slices/playlistsSlice';
 import { useSelector } from 'react-redux';
 import { State } from '../store';
 import { SearchOutlined } from '@ant-design/icons';
@@ -48,18 +48,25 @@ const PlaylistPage = () => {
         setSortOption(newSortedOption);
     };
 
-    const Sorting = () => {
-       
+    const Sorting = (music : Music[]) => {
+        return music;
     };
 
-    const Searching = () => {
-       
+    const Searching = (music : Music[]) => {
+        return music;
     };
 
     const getMusic = (search: string | undefined , sortOption: string | undefined ,) => {
+        if (search !== undefined) {
 
-       return playlistSelect.music;
+            return Searching(playlistSelect.music);
 
+        }else if (sortOption !==undefined) {
+            return Sorting(playlistSelect.music);
+        } else {
+            return playlistSelect.music;
+        }
+     
     };
 
     return (
