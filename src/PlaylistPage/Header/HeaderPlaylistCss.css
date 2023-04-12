@@ -2,7 +2,7 @@
     width: auto;
     height: 245px;
     background-color: black;
-    
+    text-align: center;
 }
 .CardPlaylistHeade {
     border-radius: 0px;
@@ -27,5 +27,6 @@
     border-radius: 4px 0px 0px 4px;
     left: 50px;
     top: 28px;
+    
    
 }
