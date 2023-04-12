@@ -40,6 +40,10 @@ const PlaylistPage = () => {
     }
     let playlistSelect = handlePlaylistselect();
 
+    const handleOnChangeSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setSearch(e.target.value);
+    };
+
     const handleSortedChange = ( newSortedOption: string) => {
         
     };
@@ -50,7 +54,7 @@ const PlaylistPage = () => {
               <HeaderPlaylist other = {playlistSelect}/>
                 <div className="upper">
                     <div className="body">
-                        <Input className={'inputPlaylist'} prefix = {<SearchOutlined />} placeholder="Artists, songs, or podcasts" />
+                        <Input className={'inputPlaylist'} prefix = {<SearchOutlined />} placeholder="Artists, songs, or podcasts" value={search} onChange={handleOnChangeSearch}/>
                         <Select
                             placeholder={"Custom order"}
                             className={'selectPlaylist'}
