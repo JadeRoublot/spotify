@@ -63,7 +63,7 @@
 
 ## Footer
 
--   [ ] On the left display playlist cover with name of music currently selected
+-   [x] On the left display playlist cover with name of music currently selected
 -   [x] Display a fake player in the center
 -   [x] Display fake control button on the right
 
