@@ -7,6 +7,21 @@
 .CardPlaylistHeade {
     border-radius: 0px;
     text-align: center;
+    
+}
+.titleInCover {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+   
+}
+.titleMainHeader{
+    display: flex;
+    text-align: center !important;
+ 
 }
 
 .textHeader {

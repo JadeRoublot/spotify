@@ -44,7 +44,7 @@ const PlaylistPage = () => {
               <HeaderPlaylist other = {playlistSelect}/>
                 <div className="upper">
                     <div className="body">
-                        <Table dataSource={playlistSelect.music} columns={columns} pagination={false}/>
+                        <Table  bordered={false} dataSource={playlistSelect.music} columns={columns} pagination={false}/>
                     </div>
                  </div>
             </div>
