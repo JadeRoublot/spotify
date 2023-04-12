@@ -1,3 +1,23 @@
+.titleMusicFooter {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.05em;
+
+    color: #FFFFFF;
+
+}
+
+.artistMusicFooter {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.05em;
+
+    color: #B3B3B3;
+
+}
+
 .customSvg {
     color:#C4C4C4;
     height: 20px !important;
