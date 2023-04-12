@@ -68,6 +68,7 @@ export const playlistsSlice = createSlice({
         playlist: [likedSongPlaylist,],
         playlistTop: createTop50(),
         displayModal: false,
+        displayMenu: false,
         music : data,
         
     },
@@ -79,6 +80,10 @@ export const playlistsSlice = createSlice({
 
         setDisplayModal: (state: { displayModal: true | false }, action: { payload: true | false }) => {
             state.displayModal = action.payload
+        },
+
+        setDisplayMenu: (state: { displayMenu: true | false }, action: { payload: true | false }) => {
+            state.displayMenu = action.payload
         },
 
         newPlaylist: (state: {playlist: Playlist[]}, action: { payload: string }) => {
@@ -96,6 +101,6 @@ export const playlistsSlice = createSlice({
     },
 );
 
-export const {setPlaylist, setDisplayModal, newPlaylist} =  playlistsSlice.actions;
+export const {setPlaylist, setDisplayModal,setDisplayMenu, newPlaylist} =  playlistsSlice.actions;
 
 export default  playlistsSlice.reducer;

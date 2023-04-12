@@ -6,6 +6,7 @@ export interface State {
         playlist: Playlist[],
         playlistTop : PlaylistTop[],
         displayModal: boolean,
+        displayMenu : boolean,
     }
    
 }
