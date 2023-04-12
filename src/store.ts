@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import playlistsReducer, { Playlist, PlaylistTop } from './Slices/playlistsSlice';
+import playlistsReducer, { MusicPlayed, Playlist, PlaylistTop } from './Slices/playlistsSlice';
 
 export interface State {
     spotify: {
@@ -7,6 +7,7 @@ export interface State {
         playlistTop : PlaylistTop[],
         displayModal: boolean,
         displayMenu : boolean,
+        musicPlayed : MusicPlayed,
     }
    
 }
