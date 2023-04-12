@@ -49,16 +49,16 @@ const PlaylistPage = () => {
     };
 
     const Sorting = (music : Music[]) => {
-        let musicSorted  = music;
+        let musicSorted: Music[] = [...music];
         switch(sortOption) {
             case "title":
-              console.log("title")
+                musicSorted.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
             break;;
             case "genre":
                 console.log("genre")
                 break;;
             case "year":
-                console.log("year")
+               musicSorted.sort((a, b) => a.year - b.year);
                 break;;
             case "duration":
                 console.log("duration")
@@ -68,7 +68,9 @@ const PlaylistPage = () => {
                 break;;
                 
         }
-        return musicSorted;
+
+       
+        return  musicSorted;
     };
 
     const Searching = (music : Music[]) => {
@@ -83,13 +85,13 @@ const PlaylistPage = () => {
         
         if (search !== undefined) {
 
-             Searching(musicOfPlaylist);
+            musicOfPlaylist = Searching(musicOfPlaylist);
 
         }
         
         if (sortOption !== undefined) {
 
-             Sorting(musicOfPlaylist);
+            musicOfPlaylist = Sorting(musicOfPlaylist);
 
         }
 
