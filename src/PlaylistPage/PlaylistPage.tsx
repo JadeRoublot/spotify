@@ -141,6 +141,8 @@ const PlaylistPage = () => {
                                
                                 dispatch(setMusicPlayed([playlistSelect , record]))
                             }, 
+
+                                onDoubleClick: (event) => {}, 
                              
                             };
                           }}/>
