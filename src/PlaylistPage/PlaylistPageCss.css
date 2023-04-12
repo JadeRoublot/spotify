@@ -16,7 +16,7 @@
     height: 32px;
 }
 
- .ant-select-selector {
+ .ant-select-selector{
    
     border: 0px  !important;
     background: #535353 !important;
@@ -25,8 +25,6 @@
 }
 
 .ant-select-selection-placeholder {
-    font-weight: 400 !important;
-    font-size: 10px !important;
-    line-height: 12px !important;   
+    
     color: #FFFFFF !important; 
 }
