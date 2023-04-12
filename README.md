@@ -39,12 +39,12 @@
     -   [x] Playlist name
 -   [ ] Body
     -   [ ] Text input to filter on any data in the current playlist (case insensitive)
-    -   [ ] Select input with sorting on 
-        -   [ ] Title
-        -   [ ] Year
-        -   [ ] Genre
-        -   [ ] Popularity
-        -   [ ] Duration 
+    -   [x] Select input with sorting on 
+        -   [x] Title
+        -   [x] Year
+        -   [x] Genre
+        -   [x] Popularity
+        -   [x] Duration 
     -   [x] Display all songs of the current playlist
     -   [ ] Display a green heart if the song as been liked
     -   [ ] Clicking on heart will add / remove from liked playlist
