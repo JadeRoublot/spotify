@@ -43,7 +43,8 @@ const SpotifyFooter = () => {
                         }}>
                             <h1 className={'titleInCoverFooter'}>{display}</h1>
                 </Card>
-                    <h1>[placeholer playlist]</h1>
+                    <h1>{playingSong.music.title}</h1>
+                    <h1>{playingSong.music.artist}</h1>
 
                 </Col>
                 <Col span={10} >
