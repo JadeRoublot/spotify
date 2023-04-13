@@ -120,6 +120,8 @@ export const playlistsSlice = createSlice({
         },
 
         setMusicToAdd: (state: {musicToAdd: Music[]}, action: { payload: Music }) => {
+            state.musicToAdd = [];
+            
             state.musicToAdd.push(action.payload);
         },
 
