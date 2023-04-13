@@ -48,7 +48,7 @@
     -   [x] Display all songs of the current playlist
     -   [ ] Display a green heart if the song as been liked
     -   [ ] Clicking on heart will add / remove from liked playlist
-    -   [ ] Contextual menu will display list of playlist, click on one will add song to it
+    -   [x] Contextual menu will display list of playlist, click on one will add song to it
 
 ## Left drawer
 
