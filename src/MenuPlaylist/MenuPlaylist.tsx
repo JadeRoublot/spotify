@@ -17,7 +17,13 @@ const MenuPlaylist = () => {
 
     return (
        <div>
-            <Modal title="Basic Modal" open={displayMenu} onCancel={handleCancel}>
+            <Modal title="Add to playlist" 
+            open={displayMenu} 
+            onCancel={handleCancel}
+            footer={[
+         
+              ]}>
+
                 {playlists.map((playlist) => {
                     if(playlist.title !== "Liked Songs") {
                         return <h1> {playlist.title}</h1>;
