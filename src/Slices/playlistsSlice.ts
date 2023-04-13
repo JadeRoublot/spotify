@@ -135,11 +135,21 @@ export const playlistsSlice = createSlice({
             });
         },
 
+        addMusicToPlaylist: (state: {playlist: Playlist[]}, action: { payload:[Playlist , Music] }) => {
+            const playlists = state.playlist.find(playlist => playlist.id === action.payload[0].id);
+           
+            const musicToAdd = action.payload[1];
+            if(playlists){ 
+                playlists.music.push(musicToAdd);
+            }
+           
+        },
+
        }
 
     },
 );
 
-export const {setPlaylist, setDisplayModal,setDisplayMenu, setMusicPlayed, setMusicToAdd , newPlaylist} =  playlistsSlice.actions;
+export const {setPlaylist, setDisplayModal,setDisplayMenu, setMusicPlayed, setMusicToAdd , newPlaylist , addMusicToPlaylist} =  playlistsSlice.actions;
 
 export default  playlistsSlice.reducer;

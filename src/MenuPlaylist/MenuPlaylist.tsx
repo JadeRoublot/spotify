@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import React, { useEffect, useState } from 'react';
 import './MenuPlaylistCss.css';
 import { State } from '../store';
-import { Music, Playlist, setDisplayMenu } from '../Slices/playlistsSlice';
+import { Music, Playlist, addMusicToPlaylist, setDisplayMenu } from '../Slices/playlistsSlice';
 
 
 const MenuPlaylist = () => {
@@ -21,8 +21,8 @@ const MenuPlaylist = () => {
     const handleOnClick = (playlist : Playlist) => {
         
         {musicToAdd.map((music) => {
-           
-            playlist.music.push(music);
+            dispatch(addMusicToPlaylist([playlist , music]));
+            
         })}
 
     
