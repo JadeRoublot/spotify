@@ -10,7 +10,10 @@ const MenuPlaylist = () => {
     const dispatch = useDispatch();
     const playlists: Playlist[] = useSelector((state: State) => state.spotify.playlist);
     const displayMenu  = useSelector((state: State) => state.spotify.displayMenu);
+    const musicToAdd  = useSelector((state: State) => state.spotify.musicToAdd);
     
+    console.log(musicToAdd);
+
     const handleCancel = () => {
         dispatch(setDisplayMenu(false));
     };

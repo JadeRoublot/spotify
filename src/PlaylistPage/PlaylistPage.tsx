@@ -6,7 +6,7 @@ import Columns from '../static/columns.json';
 import './PlaylistPageCss.css';
 import HeaderPlaylist from './Header';
 import { useParams } from 'react-router-dom';
-import { Music, Playlist, PlaylistTop, setDisplayMenu, setMusicPlayed } from '../Slices/playlistsSlice';
+import { Music, Playlist, PlaylistTop, setDisplayMenu, setMusicPlayed, setMusicToAdd } from '../Slices/playlistsSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { State } from '../store';
 import { SearchOutlined } from '@ant-design/icons';
@@ -147,7 +147,8 @@ const PlaylistPage = () => {
                                 onDoubleClick: (event) => { 
 
                                     dispatch(setDisplayMenu(true))
-                                     
+                                    dispatch(setMusicToAdd(record))
+                                    
                                 }, 
                              
                             };
