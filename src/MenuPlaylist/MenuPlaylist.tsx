@@ -18,6 +18,16 @@ const MenuPlaylist = () => {
         dispatch(setDisplayMenu(false));
     };
 
+    const handleOnClick = (playlist : Playlist) => {
+        
+        {musicToAdd.map((music) => {
+           
+            playlist.music.push(music);
+        })}
+
+    
+    };
+
     return (
        <div>
             <Modal title="Add to playlist" 
@@ -29,7 +39,7 @@ const MenuPlaylist = () => {
 
                 {playlists.map((playlist) => {
                     if(playlist.title !== "Liked Songs") {
-                        return <h1> {playlist.title}</h1>;
+                        return <h1 onClick={() => handleOnClick(playlist)}> {playlist.title}</h1>;
                     } else {
                         return null;
                 }})}
