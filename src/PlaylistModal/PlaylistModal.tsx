@@ -12,7 +12,7 @@ const PlaylistModal = () => {
     const [newPlaylistName, setNewPlaylistName] = useState<string>("");
 
     const handleOk = () => {
-        console.log(newPlaylistName);
+        
         dispatch(newPlaylist(newPlaylistName));
         dispatch(setDisplayModal(false));
     };

@@ -12,8 +12,7 @@ const MenuPlaylist = () => {
     const displayMenu  = useSelector((state: State) => state.spotify.displayMenu);
     const musicToAdd  = useSelector((state: State) => state.spotify.musicToAdd);
     
-    console.log(musicToAdd);
-
+    
     const handleCancel = () => {
         dispatch(setDisplayMenu(false));
     };
