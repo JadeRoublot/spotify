@@ -17,6 +17,7 @@ const PlaylistPage = () => {
     const param = useParams();
     const data = Data;
     const columns = Columns;
+    
 
     const playlists: Playlist[] = useSelector((state: State) => state.spotify.playlist);
     const playlistsTop: PlaylistTop[] = useSelector((state: State) => state.spotify.playlistTop);
@@ -146,6 +147,7 @@ const PlaylistPage = () => {
                                 onDoubleClick: (event) => { 
 
                                     dispatch(setDisplayMenu(true))
+                                     
                                 }, 
                              
                             };
