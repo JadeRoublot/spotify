@@ -27,13 +27,10 @@
 .textHeader {
     width: auto;
     height: 245px;
-    display: flex;
-   
     font-weight: 700;
     font-size: 96px;
-    line-height: 10px;
     letter-spacing: -0.02em;
-
+    left: 50px;
     color: #FFFFFF;
 }
 .CardPlaylistCoverMainPage {
@@ -43,5 +40,10 @@
     left: 50px;
     top: 28px;
     
-   
+
+}
+
+.wrapeur {
+    display: flex;
+    flex-wrap: wrap;
 }

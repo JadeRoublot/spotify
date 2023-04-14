@@ -28,11 +28,13 @@ const HeaderPlaylist = ({ other }: Props) => {
     return (
         <div className={'heade'} >
            <Card className={'CardPlaylistHeade'} bordered={false} style= {{background: `linear-gradient( #${other.color1} 0%, #${other.color2} 100%)`}}>
+          <div className={'wrapeur'} >
           <Card className={'CardPlaylistCoverMainPage'} bordered={false} style= {{background: `linear-gradient( #${other.color1} 0%, #${other.color2} 100%)`}}>       
             <h1 className={'titleInCover'}>{display}</h1>
           </Card>
             <div className={'textHeader'} > 
               <h1 className={'titleMainHeader'}>{title}</h1>
+            </div>
             </div>
           </Card>
         </div>
