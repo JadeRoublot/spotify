@@ -31,9 +31,10 @@ const PlaylistModal = () => {
        
        <Modal
         open={isModalOpen}
-        title="Create playlist"
+        title= {<div className={'ModalHead'}>Create playlist</div>}
         onOk={handleOk}
         onCancel={handleCancel}
+        className={'Modal'}
         footer={[
          
           <Button key="submit" type="primary" onClick={handleOk}>

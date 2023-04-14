@@ -1,0 +1,21 @@
+.ModalHead {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+
+    color: #FFFFFF;
+}
+
+.Modal {
+    width: 245px !important;
+}
+
+.ant-modal-header {
+
+    background: transparent !important;
+}
+
+.ant-modal-content{
+    background: linear-gradient( #171717 30%, #282828 30%)!important;
+}

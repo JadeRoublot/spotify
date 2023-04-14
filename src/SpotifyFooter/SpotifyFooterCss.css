@@ -75,3 +75,13 @@
 .ant-slider-handle {
     opacity: 0;
 }
+
+.titleInCoverFooter {
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: -0.04em;
+
+    color: #FFFFFF;
+}

@@ -30,7 +30,8 @@ const MenuPlaylist = () => {
     return (
        <div>
             <Modal title="Add to playlist" 
-            open={displayMenu} 
+            open={displayMenu}
+            className={'Modal'}
             onCancel={handleCancel}
             footer={[
          
