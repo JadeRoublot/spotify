@@ -9,6 +9,7 @@
 
 .Modal {
     width: 245px !important;
+    border-radius: 0px !important;
 }
 
 .ant-modal-header {
@@ -17,5 +18,18 @@
 }
 
 .ant-modal-content{
-    background: linear-gradient( #171717 30%, #282828 30%)!important;
+    background: linear-gradient( #171717 31%, #282828 31%)!important;
+    border-radius: 0px !important;
+}
+
+.ModalInput {
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 26px;
+    border:0px;
+}
+
+.ModalButton {
+    background: #1DB954;
+    border-radius: 33px;
 }

@@ -37,12 +37,12 @@ const PlaylistModal = () => {
         className={'Modal'}
         footer={[
          
-          <Button key="submit" type="primary" onClick={handleOk}>
+          <Button className={'ModalButton'} key="submit" type="primary" onClick={handleOk}>
            Create
           </Button>
         ]}
       >
-        <Input value={newPlaylistName} onChange={handleOnChange} />
+        <Input className={'ModalInput'} value={newPlaylistName} onChange={handleOnChange} />
       </Modal>
       </>
     );
