@@ -29,7 +29,7 @@ const MenuPlaylist = () => {
 
     return (
        <div>
-            <Modal title="Add to playlist" 
+            <Modal title={<div className={'ModalHead'}>Add to playlist</div>}
             open={displayMenu}
             className={'Modal'}
             onCancel={handleCancel}
@@ -39,7 +39,7 @@ const MenuPlaylist = () => {
 
                 {playlists.map((playlist) => {
                     if(playlist.title !== "Liked Songs") {
-                        return <h1 onClick={() => handleOnClick(playlist)}> {playlist.title}</h1>;
+                        return <h1 className={'TextMenuModal'} onClick={() => handleOnClick(playlist)}> {playlist.title}</h1>;
                     } else {
                         return null;
                 }})}
