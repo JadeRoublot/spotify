@@ -120,6 +120,7 @@ const PlaylistPage = () => {
               <HeaderPlaylist other = {playlistSelect}/>
                 <div className="upper">
                     <div className="body">
+                        <div className={'wrapeur'}>
                         <Input className={'inputPlaylist'} prefix = {<SearchOutlined />} placeholder="Artists, songs, or podcasts" value={search} onChange={handleOnChangeSearch}/>
                         <Select
                             placeholder={"Custom order"}
@@ -133,6 +134,7 @@ const PlaylistPage = () => {
                                 { value: 'popularity', label: 'Popularity' },
                             ]}
                         />
+                        </div>
                         <Table  bordered={false} 
                         dataSource={getMusic( search , sortOption )} 
                         columns={columns} 
