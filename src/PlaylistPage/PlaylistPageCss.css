@@ -30,3 +30,9 @@
     
     color: #FFFFFF !important; 
 }
+
+.wrapeurPlus {
+    display: flex;
+    flex-wrap: wrap;
+   
+}

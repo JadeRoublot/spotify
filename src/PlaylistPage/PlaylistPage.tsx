@@ -120,7 +120,7 @@ const PlaylistPage = () => {
               <HeaderPlaylist other = {playlistSelect}/>
                 <div className="upper">
                     <div className="body">
-                        <div className={'wrapeur'}>
+                        <div className={'wrapeurPlus'}>
                         <Input className={'inputPlaylist'} prefix = {<SearchOutlined />} placeholder="Artists, songs, or podcasts" value={search} onChange={handleOnChangeSearch}/>
                         <Select
                             placeholder={"Custom order"}
